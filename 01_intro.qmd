@@ -1,0 +1,38 @@
+# Introduction
+
+Practice parameters are "strategies for patient management developed by the profession to assist physicians in clinical decision making."@House1990 The methods described here apply to the development of ASA Practice Guidelines and Practice Advisories. They are similar in approach and methodologies but differ in that the evidence included in Advisories is limited in overall quantity, quality, and consistency. The decision to classify a guidance document as a Practice Advisory is based on the body of evidence included in the supporting systematic review; the distinction is qualitative and quantitative. Despite this difference, both types of guidance adhere to standards for trustworthy clinical practice guidelines. @Graham2011
+
+The first ASA Practice Guidelines, published in 1993, included management of the difficult airway @Caplan1993 and pulmonary artery catheterization. @Roizen1993 The early guideline development process and methods followed an approach outlined in the Manual for Clinical Practice Guideline Development (1991) @Woolf1991 commissioned by the Agency for Health Care Policy and Research (predecessor to the Agency for Healthcare Research and Quality). The manual represented the state of the art in guideline development at the time detailing 59 steps accompanied by worksheets, table formats, meeting schedules, and goals. While many of those steps became standard practice in ASA guideline development, others were dropped or modified. Some changes to the guideline development process occurred slowly, while others were more frequent, including the strength of evidence ratings (1999, 6 categories;[^01_intro-2] 2009, 5 categories;[^01_intro-3]⁠ 2010, 4 categories;[^01_intro-4] 2013, 3 categories[^01_intro-5]). ⁠
+
+Following release of Clinical Practice Guidelines we can Trust @Graham2011 from the National Academy of Medicine and Finding What Works in Health Care: Standards for Systematic Review, @Eden2011 scrutiny of guideline development increased. In that context, the approach and methods outlined here reflect the evolution of the ASA practice parameter enterprise.
+
+<!-- <hr style="height:2px;border-width:0;color:gray;background-color:gray"> -->
+
+<!-- <a href="#a">^a^</a> <a id="a"></a>^a^Predecessor to the Agency for Healthcare Research and Quality. -->
+
+<!-- ## References -->
+
+[^01_intro-1]: Predecessor to the Agency for Healthcare Research and Quality.
+
+[^01_intro-2]: Supportive, suggestive, equivocal, insufficient, inconclusive, silent.
+
+[^01_intro-3]: A: supportive literature, B: suggestive literature, C: equivocal literature, D: insufficient evidence from literature, Inadequate.
+
+[^01_intro-4]: A: supportive literature, B: suggestive literature, C: equivocal literature, D: insufficient evidence from literature.
+
+[^01_intro-5]: Category A, Category B, Insufficient Evidence.
+
+
+:::: {.content-hidden when-format="pdf"}
+
+::: {.callout-note collapse="true"}
+
+# Modification History
+
+| Date | Modification | Version | Note |
+|:-----|:---------|:--------|:----------|
+| 2022-10-04 | Initial     | 0.1 | First version|
+
+:::
+
+::::

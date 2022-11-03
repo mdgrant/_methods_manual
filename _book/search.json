@@ -1,0 +1,135 @@
+[
+  {
+    "objectID": "04_evidence_syn.html",
+    "href": "04_evidence_syn.html",
+    "title": "4  Evidence Synthesis",
+    "section": "",
+    "text": "A single study is rarely sufficient to inform a guideline or policy recommendation;(Spiegelhalter, Abrams, and Myles 2004) a synthesis of evidence obtained from multiple studies is required. The evidence synthesis may be qualitative or quantitative ranging from narrative descriptions of study results to pairwise meta-analysis (a single intervention and comparator) or network meta-analysis (multiple interventions or comparators). Regardless of the approach, the purpose of an evidence synthesis is to summarize benefits, harms, and uncertainty (statistical and non-statistical) to inform decisions and recommendations."
+  },
+  {
+    "objectID": "04_evidence_syn.html#philosophy",
+    "href": "04_evidence_syn.html#philosophy",
+    "title": "4  Evidence Synthesis",
+    "section": "4.2 Philosophy",
+    "text": "4.2 Philosophy\nAn evidence synthesis strives to make the decision calculus as explicit as possible. It should come as close to addressing the key questions as possible. Sometimes direct evidence and indirect evidence can appropriately be examined, it may be valuable.\nAnd when possible, avoid ad-hoc or highly subjective interpretation of evidence.\nNetwork meta-analyses incorporate direct and indirect evidence and may well be the only option.\nAlthough some question the validity of NMA, we are aware of no evidence to support that contention. Moreover, a pairwise meta-analysis is in effect the simpilist case of an NMA.\nObservational data and causal effects. Randomized clinical trials provide the most convincing evidence, but observational studies can offer a decision-maker useful information and sometimes critical.\nBroad structured, but not rigid.\nGoal is good decisions\nCareful sensitivity analyses.\nCan be a blunt instrument at times, but having nothing must leave the decision maker to do the calculus in his or her head, which can be fraught.\nTo that end,\nDecision calculus best to be as explicit as possible;\nCompatibility intervals; probability of the estimate being true = 0"
+  },
+  {
+    "objectID": "04_evidence_syn.html#frameworks-for-decision-making",
+    "href": "04_evidence_syn.html#frameworks-for-decision-making",
+    "title": "4  Evidence Synthesis",
+    "section": "4.3 Frameworks for Decision-Making",
+    "text": "4.3 Frameworks for Decision-Making\nThe decision-making required to develop recommendations requires a framework or model — a calculus to summarize the balance of benefits and harms, how each is valued, and their respective uncertainties. The explicitness of this decision calculus varies.(Meltzer et al. 2011) For example, a model can be conceptual in a decision makers mind with little or nothing quantitative. On the other extreme, the model can decision-analytic. Like almost all guideline enterprises, the ASA adopts an approach somewhere in the middle of the two extremes with qualitative and quantitative elements (outlined in Figure 3 using the GRADE approach).\nAfter the key questions are formulated and important outcomes specified, relevant studies are identified, data abstracted, and risk of bias appraised. Based on a quantitative (e.g., meta-analysis) or qualitative synthesis, the strength of evidence for each outcome is rated. Outcomes are then weighted according to patient values and preferences and considered as a whole, in turn determining the strength of a recommendation. What follows are descriptions and examples of how individual elements of the evidence synthesis are implemented.\n\n\n\nFigure 4.1: Model and approach to evidence synthesis for making recommendations."
+  },
+  {
+    "objectID": "04_evidence_syn.html#risk-of-bias-of-individual-studies",
+    "href": "04_evidence_syn.html#risk-of-bias-of-individual-studies",
+    "title": "4  Evidence Synthesis",
+    "section": "4.4 Risk of Bias of Individual Studies",
+    "text": "4.4 Risk of Bias of Individual Studies\nRisk of bias assessment for randomized trials uses the Cochrane tool.(sterne2019?) For non-randomized studies of interventions (eg, observational studies of interventions including cohort, case-control, and quasi-randomized designs), ROBINS-I (Risk Of Bias In Non-randomised Studies of Interventions) is used.(sterne2016?) For diagnostic accuracy studies, risk of bias for diagnostic accuracy studies are appraised with the QUADAS 2 tool (Quality Assessment of Diagnostic Accuracy Studies).(whiting2011?) Other tools may be used as relevant. Risk of bias is assessed independently by two reviewers with discrepancies resolved by discussion, or a third reviewer as needed."
+  },
+  {
+    "objectID": "04_evidence_syn.html#study-design-classification",
+    "href": "04_evidence_syn.html#study-design-classification",
+    "title": "4  Evidence Synthesis",
+    "section": "4.5 Study Design Classification",
+    "text": "4.5 Study Design Classification\nRandomized controlled trial (parallel) Cluster randomized Crossover trial Non-randomized trial (non-randomized studies of interventions) Quasi-experimental (before-after, time series) Prospective cohort (observational) Retrospective cohort (observational) Cross-sectional Case-control Fully paired (diagnostic) Case series"
+  },
+  {
+    "objectID": "04_evidence_syn.html#quantitative-synthesis",
+    "href": "04_evidence_syn.html#quantitative-synthesis",
+    "title": "4  Evidence Synthesis",
+    "section": "4.6 Quantitative Synthesis",
+    "text": "4.6 Quantitative Synthesis\nAs appropriate, based on clinical and methodological heterogeneity, study results are pooled in either pairwise or network meta-analyses. Random effects models are generally used as the goal of pooling is to estimate unconditional effects.{Hedges, 1998 #13} Statistical heterogeneity is evaluated using I2, and for values exceeding 25%, meta-regression is considered.{Thompson, 2002 #14} Small study effects and the potential for publication bias are evaluated using funnel plots, regression-based tests, and adjustment methods.{Schwarzer, 2015 #15} Relative effects are pooled as odds ratios{Doi, 2020 #27} and continuous measures as mean differences or standardized mean differences when studies use differing scales. Analyses are conducted using R in a reproducible manner{Team, 2020 #16;Blischak, 2019 #197} and are made publicly available when the Practice Parameter is completed."
+  },
+  {
+    "objectID": "04_evidence_syn.html#network-meta-analyses",
+    "href": "04_evidence_syn.html#network-meta-analyses",
+    "title": "4  Evidence Synthesis",
+    "section": "4.7 Network Meta-Analyses",
+    "text": "4.7 Network Meta-Analyses\nAbsent compelling reasons for a Bayesian approach (e.g., to incorporate regularizing/informative prior[s]), network meta-analyses using a frequentist approach are conducted."
+  },
+  {
+    "objectID": "04_evidence_syn.html#grading-the-strength-of-evidence",
+    "href": "04_evidence_syn.html#grading-the-strength-of-evidence",
+    "title": "4  Evidence Synthesis",
+    "section": "4.8 Grading the Strength of Evidence",
+    "text": "4.8 Grading the Strength of Evidence\nThe strength (certainty) of evidence for important outcomes is appraised using GRADE,{Schunemann, 2019 #18} and ACC/AHA{, 2010 #21} frameworks.\nIn the GRADE approach (likely to be adopted), a strength of evidence is determined using an algorithm that includes limitations in the body of evidence (bias, inconsistency, imprecision, indirectness, publication bias) together with factors that can increase confidence in effects obtained from observational studies (large or very large effect magnitude, dose-response, extent of plausible residual confounding). According to study limitations, the strength of evidence may be rated down 1 or 2 levels according to study limitations from a starting rating of high for RCTs. Evidence from observational studies begin with a low rating and may be rated down for limitations or rated up because of effect magnitude, dose-response, or the impact of plausible residual confounding. GRADE guidance for rating the certainty of evidence up or down is followed, with some additions. Inconsistency (unexplained heterogeneity) of pooled effects is judged by examining statistical measures (I2 and between-study variance 𝜏2) alongside prediction intervals when there are sufficient studies. Statistical measures can vary by effect (associational) measures (eg, risk ratio and odds ratio) and are examined for differences in choice."
+  },
+  {
+    "objectID": "04_evidence_syn.html#strength-of-recommendations",
+    "href": "04_evidence_syn.html#strength-of-recommendations",
+    "title": "4  Evidence Synthesis",
+    "section": "4.9 Strength of Recommendations",
+    "text": "4.9 Strength of Recommendations\nThe categories of recommendations in the GRADE approach include strong in favor, weak in favor, weak against, and strong against an intervention. Strong recommendations reflect Task Force believing all or almost all clinicians would choose the specific action or approach. Weak recommendations are those where most, but not all, would choose the action or approach."
+  },
+  {
+    "objectID": "04_evidence_syn.html#references",
+    "href": "04_evidence_syn.html#references",
+    "title": "4  Evidence Synthesis",
+    "section": "4.10 References",
+    "text": "4.10 References\n\n\n\n\nMeltzer, David O, Ties Hoomans, Jeanette W Chung, and Anirban Basu. 2011. “Minimal Modeling Approaches to Value of Information Analysis for Health Research.” Med Decis Making 31 (6): E1–22. https://doi.org/10.1177/0272989X11412975.\n\n\nSpiegelhalter, D. J., K. R. Abrams, and Jonathan P. Myles. 2004. Bayesian Approaches to Clinical Trials and Health Care Evaluation. Wiley."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "ASA Methods Manual (version 0.1)",
+    "section": "",
+    "text": "Preface\nThis manual represents the methods used to develop the American Society of Anesthesiologists (ASA) practice parameters. It describes processes, procedures, and relevant policies overseen by the Committee on Practice Parameters (CPP).\nAs the methods and approaches evolve, modification are incorporated. Those representing ASA policy or falling directly under the authority of the CPP are included only after relevant approval (eg, matters related to conflict of interest or the choice of strength of evidence framework). Other changes, for example evidence synthesis methods, are the purview of methodologists. They are included as appropriate or as clarifications are necessary. A history of substantive modifications are listed at the end of each chapter (in the online version only).\nCorrections, suggestions for additions, or general comment can be sent to Mark Grant.\n\n\n\n\n\n\n\nModification History\n\n\n\n\n\n\n\n\nDate\nModification\nVersion\nNote\n\n\n\n\n2022-10-04\nInitial\n0.1\nFirst version"
+  },
+  {
+    "objectID": "04_evidence_syn.html#introduction",
+    "href": "04_evidence_syn.html#introduction",
+    "title": "4  Evidence Synthesis",
+    "section": "4.1 Introduction",
+    "text": "4.1 Introduction\nA single study is rarely sufficient to inform a guideline or policy recommendation;(Spiegelhalter, Abrams, and Myles 2004) a synthesis of evidence obtained from multiple studies is required. The evidence synthesis may be qualitative or quantitative ranging from narrative descriptions of study results to pairwise meta-analysis (a single intervention and comparator) or network meta-analysis (multiple interventions or comparators). Regardless of the approach, the purpose of an evidence synthesis is to summarize benefits, harms, and uncertainty (statistical and non-statistical) to inform decisions and recommendations."
+  },
+  {
+    "objectID": "03_syst_rev.html#protocol",
+    "href": "03_syst_rev.html#protocol",
+    "title": "3  Systematic Review",
+    "section": "3.1 Protocol",
+    "text": "3.1 Protocol\n\n\n\n\n\n\n\n\n\nThe protocol, developed collaboratively between the task force and methodologists, guides systematic review conduct, and provides documentation for updates. It includes background material, key questions, PICOs, analytic framework, study inclusion and exclusion criteria, search strategy, and the anticipated approach to evidence synthesis. Depending on the anticipated scope, protocols may be registered on PROSPERO. (Booth et al. 2012) However, when the systematic review includes numerous questions and anticipated to require substantial refinement and modifications, registration is omitted. The protocol is included in a supplement to the published practice parameter.\nAn example protocol can be viewed here."
+  },
+  {
+    "objectID": "03_syst_rev.html#outcome-importance",
+    "href": "03_syst_rev.html#outcome-importance",
+    "title": "3  Systematic Review",
+    "section": "3.2 Outcome Importance",
+    "text": "3.2 Outcome Importance\nOutcomes vary in importance for decision making and formulating recommendations. Importance incorporates patient preferences and values for those outcomes. (Guyatt et al. 2011) Following protocol completion, task force members independently rank beneficial and harmful outcome importance for decision-making. The rankings are reviewed by the entire task force and revised to achieve consensus. Outcomes are then assigned a level of importance (critical, important but not critical, low importance) to prioritize the evidence synthesis and inform recommendations."
+  },
+  {
+    "objectID": "03_syst_rev.html#identifying-relevant-literature",
+    "href": "03_syst_rev.html#identifying-relevant-literature",
+    "title": "3  Systematic Review",
+    "section": "3.3 Identifying Relevant Literature",
+    "text": "3.3 Identifying Relevant Literature\n\n3.3.1 Database Searches\nA librarian/information specialist develops search strategies. Bibliographic databases queried include PubMed, Embase®, Scopus®, and Cochrane Central Register of Controlled Trials. The task force also submits relevant references for consideration, including systematic reviews and guidelines for reference checking. To ensure that relevant publications have been captured, search result identification of references submitted by the task force is examined. Grey literature searches are topic-dependent, and may rely on registries, conference abstracts, preprint servers, and FDA documents including advisory meeting transcripts.\n\n\n3.3.2 Reference Checking\nStudies referenced in relevant reviews (guidelines, systematic reviews, meta-analyses, and guidelines identified during title abstract screening are considered eligible for inclusion.\nThe selection process outlined below used to identify 2 to 3 reviews. References from those reviews are compiled in a bibliographic database and those not included in the ASA search are added to DistillerSR for screening.\n\n\n\n3.3.3 Task Force contributed\nThe task force is given the opportunity to submit potentially relevant primary studies, guidelines, systematic reviews, and meta-analyses. The non-primary research are included in the reference checking process and they remainder considered in the standard selection process.\n\n\n3.3.4 Deduplication\nCitations are maintained in EndNote™. Deduplication is performed using EndNote™ and a dedicated systematic review software (DistillerSR)."
+  },
+  {
+    "objectID": "03_syst_rev.html#title-abstract-screening-and-full-text-selection",
+    "href": "03_syst_rev.html#title-abstract-screening-and-full-text-selection",
+    "title": "3  Systematic Review",
+    "section": "3.4 Title Abstract Screening and Full-Text Selection",
+    "text": "3.4 Title Abstract Screening and Full-Text Selection\nBased on the inclusion-exclusion criteria, study selection is performed with titles and abstracts stage followed by a full-text review of identified articles. Study designs included in the systematic review are determined by the questions, PICOs, and evidence availability. Two reviewers independently apply criteria at each stage with discrepancies resolved by discussion or a third reviewer if needed. As appropriate, training sets are used to develop agreement concerning the application of inclusion-exclusion criteria. Reasons for exclusion at the full-text stage are recorded using a standard set of justifications. Semi-automated predictive tools for title/abstract screening are utilized;(Polanin et al. 2019) screening may be truncated when inclusion predictions for the remaining references are low (eg, less than 2% to 3%) when the number of references is exceedingly large."
+  },
+  {
+    "objectID": "03_syst_rev.html#data-abstraction-and-management",
+    "href": "03_syst_rev.html#data-abstraction-and-management",
+    "title": "3  Systematic Review",
+    "section": "3.5 Data Abstraction and Management",
+    "text": "3.5 Data Abstraction and Management\nAccurate data abstraction, quality control, and data management enhance reproducibility and support valid evidence synthesis. Standard review-specific forms are utilized for data entry by a single reviewer(Patient-Centered Outcomes Research Institute and others 2019) with verification of relevant data for quantitative synthesis data. Data are maintained and edited in DistillerSR and data dictionaries compiled to facilitate analysis. Data are transferred to local storage for analysis."
+  },
+  {
+    "objectID": "03_syst_rev.html#data-elements",
+    "href": "03_syst_rev.html#data-elements",
+    "title": "3  Systematic Review",
+    "section": "3.6 Data Elements",
+    "text": "3.6 Data Elements\nStudy design categorization\nRandomized designs\nQuasi-experimental\nBefore-after w or w/o control\nInterrupted time series w or w/o control"
+  },
+  {
+    "objectID": "03_syst_rev.html#data-availability",
+    "href": "03_syst_rev.html#data-availability",
+    "title": "3  Systematic Review",
+    "section": "3.7 Data Availability",
+    "text": "3.7 Data Availability\nFollowing completion of a practice parameter, all abstracted data are publicly available on GitHub.\n\n\n\n\nBooth, A., M. Clarke, G. Dooley, D. Ghersi, D. Moher, M. Petticrew, and L. Stewart. 2012. “The Nuts and Bolts of PROSPERO: An International Prospective Register of Systematic Reviews.” Syst Rev 1: 2. https://doi.org/10.1186/2046-4053-1-2.\n\n\nEden, Jill. 2011. Finding What Works in Health Care: Standards for Systematic Reviews. Washington, D.C.: National Academies Press.\n\n\nGraham, Robin. 2011. Clinical Practice Guidelines We Can Trust. Washington, DC: National Academies Press.\n\n\nGuyatt, G. H., A. D. Oxman, R. Kunz, D. Atkins, J. Brozek, G. Vist, P. Alderson, P. Glasziou, Y. Falck-Ytter, and H. J. Schunemann. 2011. “GRADE Guidelines: 2. Framing the Question and Deciding on Important Outcomes.” J Clin Epidemiol 64 (4): 395–400. https://doi.org/10.1016/j.jclinepi.2010.09.012.\n\n\nPatient-Centered Outcomes Research Institute and others. 2019. “PCORI Methodology Standards.” PCORI.\n\n\nPolanin, Joshua R., Terri D. Pigott, Dorothy L. Espelage, and Jennifer K. Grotpeter. 2019. “Best Practice Guidelines for Abstract Screening Large‐evidence Systematic Reviews and Meta‐analyses.” Research Synthesis Methods 10 (3): 330–42. http://europepmc.org/abstract/PMC/PMC6771536."
+  }
+]

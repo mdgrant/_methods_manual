@@ -1,0 +1,21 @@
+# Preface {.unnumbered}
+
+This manual represents the methods used to develop the American Society of Anesthesiologists (ASA) practice parameters. It describes processes, procedures, and relevant policies overseen by the Committee on Practice Parameters (CPP).
+
+As the methods and approaches evolve, modification are incorporated. Those representing ASA policy or falling directly under the authority of the CPP are included only after relevant approval (eg, matters related to conflict of interest or the choice of strength of evidence framework). Other changes, for example evidence synthesis methods, are the purview of methodologists. They are included as appropriate or as clarifications are necessary. A history of substantive modifications are listed at the end of each chapter (in the online version only).
+
+Corrections, suggestions for additions, or general comment can be sent to [Mark Grant](mailto:m.grant@asahq.org).
+
+:::: {.content-hidden when-format="pdf"}
+
+::: {.callout-note collapse="true"}
+
+# Modification History
+
+| Date | Modification | Version | Note |
+|:-----|:---------|:--------|:----------|
+| 2022-10-04 | Initial     | 0.1 | First version|
+
+:::
+
+::::

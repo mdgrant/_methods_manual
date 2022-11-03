@@ -1,0 +1,68 @@
+project:
+  type: book
+
+book:
+  title: "ASA Methods Manual (version 0.1)"
+  # author: "Jane Doe"
+  date: "today"
+  chapters:
+    - index.qmd
+    - 01_intro.qmd
+    - 02_organization.qmd
+    - 03_syst_rev.qmd
+    - 04_evidence_syn.qmd
+    - summary.qmd
+    - references.qmd
+
+bibliography: methods_refs.bib
+# csl: jama.csl
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt
+
+editor: visual
+
+
+
+# book:
+#   title: "ASA Methods Manual (version 0.1)"
+#   date: "`R Sys.Date()`"
+#   chapters:
+#     - index.qmd
+#     - 01_intro.qmd
+#     - 02_organization.qmd
+#     - 03_syst_rev.qmd
+#     - 04_evidence_syn.qmd
+#     - 05_structure.qmd
+#     - 06_approval.qmd
+#     - 07_implementation.qmd
+#     - 08_endorsement.qmd
+#     - 09_patient.qmd
+#     - 10_other.qmd
+#     - 98_summary.qmd
+#     - 99_appendix.qmd
+#     - references.qmd
+# 
+# footnotes-hover: true
+# 
+# csl: nature.csl
+# csl: chicago-author-date.csl
+# 
+# format:
+#   html:
+#     theme: cosmo
+#     bibliography: methods_refs.bib
+#     # reference-location: section
+#     cite-method: citeproc
+#     fig-cap-location: top
+#     # suppress-bibliography: false
+#     # fig-width: 3
+#     # fig-height: 3
+# 
+#   pdf:
+#     documentclass: scrreprt
+# 
+# editor: visual

@@ -1,0 +1,77 @@
+# Systematic Review
+
+Trustworthy clinical practice guidelines [@Graham2011] are supported by systematic reviews meeting explicit standards [@Eden2011; @PCORI2019]. The systematic reviews supporting ASA practice parameters conform to those standards.
+
+## Protocol
+
+<!-- ### Purpose -->
+
+<!-- ### Organization -->
+
+<!-- 1.  Background -->
+
+<!-- 2.  Key Questions -->
+
+<!-- 3.  PICOTS<br/> Population<br/> Interventions<br/> Comparators<br/> Outcomes<br/> Timing Settings<br/> -->
+
+<!-- 4.  Analytic Framework -->
+
+<!-- 5.  Methods <br/>Search <br/>Study inclusion/exclusion criteria <br/>Search Strategies <br/>Data Abstraction and Management <br/>Risk of Bias Appraisal <br/>Evidence Synthesis <br/>Grading the Strength of Evidence -->
+
+<!-- 6.  Registration -->
+
+<!-- 7.  References -->
+
+The protocol, developed collaboratively between the task force and methodologists, guides systematic review conduct, and provides documentation for updates. It includes background material, key questions, PICOs, analytic framework, study inclusion and exclusion criteria, search strategy, and the anticipated approach to evidence synthesis. Depending on the anticipated scope, protocols may be registered on [PROSPERO](https://www.crd.york.ac.uk/PROSPERO/). [@Booth2012] However, when the systematic review includes numerous questions and anticipated to require substantial refinement and modifications, registration is omitted. The protocol is included in a supplement to the published practice parameter.
+
+An example protocol can be viewed [here](assets/Protocol_Geriatrics_2022-09-17.pdf).
+
+## Outcome Importance
+
+Outcomes vary in importance for decision making and formulating recommendations. Importance incorporates patient preferences and values for those outcomes. [@Guyatt2011] Following protocol completion, task force members independently rank beneficial and harmful outcome importance for decision-making. The rankings are reviewed by the entire task force and revised to achieve consensus. Outcomes are then assigned a level of importance (critical, important but not critical, low importance) to prioritize the evidence synthesis and inform recommendations.
+
+## Identifying Relevant Literature
+
+### Database Searches
+
+A librarian/information specialist develops search strategies. Bibliographic databases queried include PubMed, Embase®, Scopus®, and Cochrane Central Register of Controlled Trials. The task force also submits relevant references for consideration, including systematic reviews and guidelines for reference checking. To ensure that relevant publications have been captured, search result identification of references submitted by the task force is examined. Grey literature searches are topic-dependent, and may rely on registries, conference abstracts, preprint servers, and FDA documents including advisory meeting transcripts.
+
+### Reference Checking
+
+Studies referenced in relevant reviews (guidelines, systematic reviews, meta-analyses, and guidelines identified during title abstract screening are considered eligible for inclusion.
+
+The selection process outlined below used to identify 2 to 3 reviews. References from those reviews are compiled in a bibliographic database and those not included in the ASA search are added to DistillerSR for screening.
+
+![](assets/referenceChecking.png){width="650"}
+
+### Task Force contributed
+
+The task force is given the opportunity to submit potentially relevant primary studies, guidelines, systematic reviews, and meta-analyses. The non-primary research are included in the reference checking process and they remainder considered in the standard selection process.
+
+### Deduplication
+
+Citations are maintained in EndNote™. Deduplication is performed using EndNote™ and a dedicated systematic review software (DistillerSR).
+
+## Title Abstract Screening and Full-Text Selection
+
+Based on the inclusion-exclusion criteria, study selection is performed with titles and abstracts stage followed by a full-text review of identified articles. Study designs included in the systematic review are determined by the questions, PICOs, and evidence availability. Two reviewers independently apply criteria at each stage with discrepancies resolved by discussion or a third reviewer if needed. As appropriate, training sets are used to develop agreement concerning the application of inclusion-exclusion criteria. Reasons for exclusion at the full-text stage are recorded using a standard set of justifications. Semi-automated predictive tools for title/abstract screening are utilized;[@Polanin2019] screening may be truncated when inclusion predictions for the remaining references are low (eg, less than 2% to 3%) when the number of references is exceedingly large.
+
+## Data Abstraction and Management
+
+Accurate data abstraction, quality control, and data management enhance reproducibility and support valid evidence synthesis. Standard review-specific forms are utilized for data entry by a single reviewer[@PCORI2019] with verification of relevant data for quantitative synthesis data. Data are maintained and edited in DistillerSR and data dictionaries compiled to facilitate analysis. Data are transferred to local storage for analysis.
+
+## Data Elements
+
+Study design categorization
+
+Randomized designs
+
+Quasi-experimental
+
+Before-after w or w/o control
+
+Interrupted time series w or w/o control
+
+## Data Availability
+
+Following completion of a practice parameter, all abstracted data are publicly available on GitHub.

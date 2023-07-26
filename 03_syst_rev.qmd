@@ -4,74 +4,164 @@ Trustworthy clinical practice guidelines [@Graham2011] are supported by systemat
 
 ## Protocol
 
-<!-- ### Purpose -->
-
-<!-- ### Organization -->
-
-<!-- 1.  Background -->
-
-<!-- 2.  Key Questions -->
-
-<!-- 3.  PICOTS<br/> Population<br/> Interventions<br/> Comparators<br/> Outcomes<br/> Timing Settings<br/> -->
-
-<!-- 4.  Analytic Framework -->
-
-<!-- 5.  Methods <br/>Search <br/>Study inclusion/exclusion criteria <br/>Search Strategies <br/>Data Abstraction and Management <br/>Risk of Bias Appraisal <br/>Evidence Synthesis <br/>Grading the Strength of Evidence -->
-
-<!-- 6.  Registration -->
-
-<!-- 7.  References -->
-
-The protocol, developed collaboratively between the task force and methodologists, guides systematic review conduct, and provides documentation for updates. It includes background material, key questions, PICOs, analytic framework, study inclusion and exclusion criteria, search strategy, and the anticipated approach to evidence synthesis. Depending on the anticipated scope, protocols may be registered on [PROSPERO](https://www.crd.york.ac.uk/PROSPERO/). [@Booth2012] However, when the systematic review includes numerous questions and anticipated to require substantial refinement and modifications, registration is omitted. The protocol is included in a supplement to the published practice parameter.
-
-An example protocol can be viewed [here](assets/Protocol_Geriatrics_2022-09-17.pdf).
+The protocol, developed collaboratively between the task force and methodologists, guides systematic review conduct, and provides documentation for updates. It includes background material, key questions, PICOTS,[^03_syst_rev-1] analytic framework, study inclusion and exclusion criteria, search strategy, and the anticipated approach to evidence synthesis. Depending on the anticipated scope, protocols may be registered on [PROSPERO](https://www.crd.york.ac.uk/PROSPERO/) [@Booth2012]. However, when the systematic review includes numerous questions and anticipated to require substantial refinement and modifications, registration is omitted. The protocol is included as a supplement to the published practice parameter. (An example draft protocol can be viewed [here](assets/Protocol_Geriatrics_2022-09-17.pdf)).
 
 ## Outcome Importance
 
-Outcomes vary in importance for decision making and formulating recommendations. Importance incorporates patient preferences and values for those outcomes. [@Guyatt2011] Following protocol completion, task force members independently rank beneficial and harmful outcome importance for decision-making. The rankings are reviewed by the entire task force and revised to achieve consensus. Outcomes are then assigned a level of importance (critical, important but not critical, low importance) to prioritize the evidence synthesis and inform recommendations.
+Outcomes vary in importance for decision making and formulating recommendations. Importance incorporates patient preferences and values for those outcomes [@Guyatt2011]. Following protocol completion, task force members independently rank beneficial and harmful outcome importance for decision-making. The rankings are reviewed by the entire task force and revised to achieve consensus. Outcomes are then assigned a level of importance (critical, important but not critical, low importance) and a ranking from 1 to 5 to prioritize the evidence synthesis and inform recommendations.
 
-## Identifying Relevant Literature
+![Prioritization of outcomes for neuromuscular monitoring.](assets/priority_nmb.png){#fig-priority fig-align="left" width="90%"}
+
+```{r}
+#| echo: false
+#| label: fig-priority_geri 
+#| fig-cap: "Example of assessing outcome importance rankings in a geriatrics guideline. Rankings for the 5 most important outcomes across 7 key questions (11 respondents with maximum 77 for each outcome rank or any top 5 ranking)."
+
+library(janitor)
+library(htmltools)
+library(reactable)
+library(reactablefmtr)
+library(tidyverse)
+## key questions 1-6 & 8 --------------------------------------- (2023-01-24 11:48) @----
+# function for outcome priority table by kq
+outcome_tab_all <- function(outcome_dat, responses) {
+  reactable(
+    outcome_dat,
+    pagination = FALSE,
+    # highlight = TRUE,
+    defaultSorted = "any_top_5",
+    defaultSortOrder = "desc",
+    defaultColDef = colDef(
+      cell = data_bars(outcome_dat,
+                       box_shadow = TRUE,
+                       force_outside = c(1, 77),
+                       bar_height = 12,
+                       max_value = responses
+                       # fill_color = "#B22215"
+      ),
+      style = cell_style(outcome_dat,
+                         font_size = "11px",
+      )
+    ),
+    columns = list(
+      outcome = colDef(name = "Outcome", width = 200),
+      rank1 = colDef(name = "Rank 1", width = 80, headerClass = "header", align = "center"),
+      rank2 = colDef(name = "Rank 2", width = 80, headerClass = "header", align = "center"),
+      rank3 = colDef(name = "Rank 3", width = 80, headerClass = "header", align = "center"),
+      rank4 = colDef(name = "Rank 4", width = 80, headerClass = "header", align = "center"),
+      rank5 = colDef(name = "Rank 5", width = 80, headerClass = "header", align = "center"),
+      any_top_5 = colDef(
+        name = "Any", width = 80, headerClass = "header", align = "center",
+        cell = data_bars(
+          outcome_dat,
+          force_outside = c(1, 77),
+          box_shadow = TRUE,
+          bar_height = 12,
+          max_value = responses,
+          fill_color = "#B22215"
+        )
+      )
+    ),
+    theme = reactableTheme(
+      borderColor = "#dfe2e5",
+      stripedColor = "#f6f8fa",
+      highlightColor = "#f0f5f9",
+      cellPadding = "0px 0px"
+    ),
+    compact = TRUE,
+    class = "priority-tbl"
+  )
+}
+
+# read data for all kq
+priority_dat <- readxl::read_xlsx(path = "~/Documents/_projects01/asa/_methods_manual/data/OutcomeRankingRawData_2023-01-23.xlsx", range = "A1:S89", sheet = "data") |>
+  remove_empty(which = "rows") |> 
+  fill(kq) |>
+  # exclude kq7 not being addressed
+  filter(kq != 7) |>
+  mutate(id = paste0(kq, "-", id))
+
+# function to tally the number by rank 1, 2, 3, 4, 5
+rankings_all <- function(priority) {
+  priority_dat |>
+    # group_by(kq) |>
+    summarise(across(3:19, ~ sum(.x == priority, na.rm = TRUE)), .names = "{.col}") |>
+    mutate(rank = priority)
+}
+
+rankings_dat <- bind_rows(rankings_all(1), rankings_all(2), rankings_all(3), rankings_all(4), rankings_all(5)) |>
+  select(-.names)
+
+rankings_dat <- tblhelpr::transpose_tibble(rankings_dat, col_names = rank, id_col = "outcomes") |>
+  rename_with(.fn = ~ paste0("rank", .)) |>
+  rename(outcome = rankoutcomes) |>
+  mutate(across(rank1:rank5, as.numeric),
+    any_top_5 = rank5 + rank4 + rank3 + rank2 + rank1
+  )
+
+# rankings_dat |>
+#   summarise(across(rank1:rank5, sum))
+
+outcome_tab_all(rankings_dat, 77)
+```
+
+<font size = 2>*Note that rows can be reordered according to ranking by clicking on column headers.*</font>
+
+## Identifying Literature
 
 ### Database Searches
 
-A librarian/information specialist develops search strategies. Bibliographic databases queried include PubMed, Embase®, Scopus®, and Cochrane Central Register of Controlled Trials. The task force also submits relevant references for consideration, including systematic reviews and guidelines for reference checking. To ensure that relevant publications have been captured, search result identification of references submitted by the task force is examined. Grey literature searches are topic-dependent, and may rely on registries, conference abstracts, preprint servers, and FDA documents including advisory meeting transcripts.
+A librarian/information specialist develops search strategies after reviewing the protocol and participating in task force meetings. The primary bibliographic databases queried include PubMed, Embase®, Scopus®, and Cochrane Central Register of Controlled Trials. The task force also submits relevant references for consideration, including systematic reviews and guidelines for reference checking. To ensure that relevant publications have been captured, search result identification of references submitted by the task force is examined. Grey literature searches are topic-dependent relying on registries, conference abstracts, preprint servers, and FDA documents including advisory meeting transcripts. The search dates are determinied by the task force and consider sensitivity [@Xu2022], applicability and generalizability to current practice, and resources required to conduct the review. Depending on the key question, searches may not be limited to English language publications [@Jia2020; @Juni2002; @Egger1997; @Mao2020].
 
-### Reference Checking
+### Citation Searching
 
-Studies referenced in relevant reviews (guidelines, systematic reviews, meta-analyses, and guidelines identified during title abstract screening are considered eligible for inclusion.
+Backwards searching for studies included in relevant systematic reviews, meta-analyses, and guidelines are considered eligible for inclusion. The selection process outlined below (@fig-checking) is used to identify typically 2 to 3 reviews. Studies included in the those reviews are compiled in a bibliographic database. Those studies not identified in the primary search are subsequently assessed for eligibility. On a selective basis, forward citation searching is conducted using seminal studies to identify citing studies. [Citationchaser](https://estech.shinyapps.io/citationchaser/) is used to facility citation searching [@Haddaway2022].
 
-The selection process outlined below used to identify 2 to 3 reviews. References from those reviews are compiled in a bibliographic database and those not included in the ASA search are added to DistillerSR for screening.
+![Approach to backward citation searching.](assets/referenceChecking.png){#fig-checking fig-align="left" width="500"}
 
-![](assets/referenceChecking.png){width="650"}
-
-### Task Force contributed
+### Task Force
 
 The task force is given the opportunity to submit potentially relevant primary studies, guidelines, systematic reviews, and meta-analyses. The non-primary research are included in the reference checking process and they remainder considered in the standard selection process.
 
+### Retracted Publications
+
+Identifying retracted publications is critical to assuring the integrity of the systematic review. Accordingly, searches for retractions of included studies are conducted using relevant search terms (eg, [see this guide](https://ambulance.libguides.com/retracted)) and the [Retraction Watch Database](http://retractiondatabase.org/RetractionSearch.aspx?) (can be facilitated using Zotero's [Retracted Items](https://www.zotero.org/blog/retracted-item-notifications/) feature).
+
 ### Deduplication
 
-Citations are maintained in EndNote™. Deduplication is performed using EndNote™ and a dedicated systematic review software (DistillerSR).
+Deduplication is performed using EndNote™ (used as the primary bibliographic database) and a dedicated systematic review software platform (DistillerSR).
 
-## Title Abstract Screening and Full-Text Selection
+## Study Selection
 
-Based on the inclusion-exclusion criteria, study selection is performed with titles and abstracts stage followed by a full-text review of identified articles. Study designs included in the systematic review are determined by the questions, PICOs, and evidence availability. Two reviewers independently apply criteria at each stage with discrepancies resolved by discussion or a third reviewer if needed. As appropriate, training sets are used to develop agreement concerning the application of inclusion-exclusion criteria. Reasons for exclusion at the full-text stage are recorded using a standard set of justifications. Semi-automated predictive tools for title/abstract screening are utilized;[@Polanin2019] screening may be truncated when inclusion predictions for the remaining references are low (eg, less than 2% to 3%) when the number of references is exceedingly large.
+Based on the inclusion-exclusion criteria (study design and PICOTS), study selection is performed by reviewing titles and abstracts. The semi-automated predictive tool for title and abstract screening implemented in DistillerSR is utilized. [@Polanin2019] If the number of references is exceedingly large (eg, \> 10,000 or 15,000), screening may be truncated when inclusion predictions for the remaining unscreened references are low (eg, less than 2% to 3%). Full-text review of potentially relevant publications is then conducted with reasons for exclusion at the full-text stage are recorded using a standard set of justifications.
 
-## Data Abstraction and Management
+Study designs considered eligible for specific key questions are determined by the questions, PICOTS, and evidence availability. For example, although randomized designs generally offer the most convincing evidence, if few address a particular question/PICOTS, nonrandomized designs may be included. Similarly, nonrandomized designs may be included for evaluation of harms. Case reports and case series, conference abstracts, letters not considered brief research reports, non-English publications, and animal studies are generally not considered eligible.
 
-Accurate data abstraction, quality control, and data management enhance reproducibility and support valid evidence synthesis. Standard review-specific forms are utilized for data entry by a single reviewer[@PCORI2019] with verification of relevant data for quantitative synthesis data. Data are maintained and edited in DistillerSR and data dictionaries compiled to facilitate analysis. Data are transferred to local storage for analysis.
+Two reviewers independently apply independently inclusion-exclusion criteria at each stage with discrepancies resolved by consensus including a third reviewer. Training sets are used to develop agreement concerning the application of inclusion-exclusion criteria.
 
-## Data Elements
+## Data Extraction/Management
 
-Study design categorization
+Accurate data extraction, quality control, and data management enhance reproducibility and support valid evidence synthesis. The workflow standardizes data extraction into a dedicated database with an audit log, and once entered, minimizes manual data manipulation (eg, cutting and pasting).
 
-Randomized designs
+A standard review-specific set of data entry forms, modified for each systematic review, are used:
 
-Quasi-experimental
+-   Study characteristics<br/>
+-   Study arm data<br/>
+-   Dichotomous outcomes (as reported)<br/>
+-   Continuous outcomes (as reported)<br/>
+-   Likert or other rating scale outcomes (as reported)<br/>
+-   Risk of bias
 
-Before-after w or w/o control
+Data are abstracted by a single reviewer with verification [@PCORI2019 SR-1] of data relevant for quantitative synthesis and rating (GRADEing) the strength of evidence. Figures are digitized as necessary to obtain results for synthesis. Data are maintained and edited in DistillerSR, a data dictionary compiled, and then transferred to a local repository for evidence synthesis or reports created using DistillerSR. A sample study characteristics form can be seen [here](assets/studyCharacteristicsGeri.pdf).
 
-Interrupted time series w or w/o control
+## Study Risk of Bias Assessments
 
-## Data Availability
+Risk of bias for individual studies are evaluated using tools relevant for the study design. The most commonly used tools include:
 
-Following completion of a practice parameter, all abstracted data are publicly available on GitHub.
+-   Randomized clinical trials --- [Cochrane risk of bias tool 2.0](https://sites.google.com/site/riskofbiastool/welcome/rob-2-0-tool/current-version-of-rob-2)
+-   Nonrandomized studies --- [ROBINS-I](https://sites.google.com/site/riskofbiastool/welcome/home) (Risk Of Bias In Non-randomized Studies of Interventions)
+-   Diagnostic studies -- [QUADAS-2](https://www.bristol.ac.uk/population-health-sciences/projects/quadas/quadas-2/) (Quality Assessment of Diagnostic Accuracy Studies)
+
+Risk of bias assessments are performed independently by 2 reviews and discordances in domain and signalling question results reconciled by concensus including a third reviewer as necessary. Separate risk of bias assessments are conducted for clinical and patient reported outcomes, but may not be conducted for each of the typically multiple outcomes examined.
+
+[^03_syst_rev-1]: Populations, interventions, comparators, outcomes, timing, and setting.

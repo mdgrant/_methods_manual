@@ -15,13 +15,16 @@ book:
     - references.qmd
 
 bibliography: methods_refs.bib
-# csl: jama.csl
+csl: authorDate.csl
 
 format:
   html:
     theme: cosmo
+    tbl-cap-location: margin
   pdf:
     documentclass: scrreprt
+
+fig-cap-location: top
 
 editor: visual
 

@@ -32,24 +32,6 @@ Applying evaluation criteria (separate criteria for updating practice parameters
 
 ![Depiction of the prioritization process.](assets/prioritization.png){#fig-prioritization width="100%"}
 
-
-## Updating
-
-Here or separate
-
-ASA practice parameters are reviewed annually and updated after approximately 5 years, as determined (prioritized? at the discretion of?) by the Committee on Practice Parameters.
-
-ASA practice parameters are reviewed by the Committee on Practice Parameters not later than 5 years after publication for potential updating. The primary considerations used to determine priority for updating are relevance and new evidence potentially changing care.
-
-Updates to practice parameters are considered to those published approximately 5 years prior, or in the event that new data may influence a recommendation and follow the same practice parameter development process.
-
-1.  Changes in evidence on the existing benefits and harms of interventions
-2.  Changes in outcomes considered important
-3.  Changes in available interventions
-4.  Changes in evidence that current practice is optimal
-5.  Changes in values placed on outcomes
-6.  Changes in resources available for health care
-
 ## Developing Practice Parameters
 
 @fig-process outlines the practice parameter development process. An introductory meeting serves to orient the task force chairs and co-chairs to the process, timeline, and the roles of methodologists. Subsequent task force meetings are then devoted to defining the PICOs (populations, interventions, comparators, and outcomes) and key questions questions. A protocol is then drafted by the methodologists and reviewed by the task force 2 to 4 weeks later. The systematic review and evidence synthesis is then conducted, during which time the task force is convened as needed for input and decisions concerning any issues that arise including modifications to the protocol. The methodologists complete the evidence synthesis to inform recommendations. Finally, the practice parameter is drafted, submitted to Anesthesiology for review, public comment is solicited, followed by submission to the ASA Board of Directors for approval and finally the House of Delegates.

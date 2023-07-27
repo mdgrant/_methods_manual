@@ -8,7 +8,7 @@ The protocol, developed collaboratively between the task force and methodologist
 
 ## Outcome Importance
 
-Outcomes vary in importance for decision making and formulating recommendations. Importance incorporates patient preferences and values for those outcomes [@Guyatt2011]. Following protocol completion, task force members independently rank beneficial and harmful outcome importance for decision-making. The rankings are reviewed by the entire task force and revised to achieve consensus. Outcomes are then assigned a level of importance (critical, important but not critical, low importance) and a ranking from 1 to 5 to prioritize the evidence synthesis and inform recommendations.
+Outcomes vary in importance according to patient values and preferences [@Guyatt2011]. From that perspective, following protocol completion task force members rate outcome importance for decision-making. The ratings are reviewed by the entire task force and revised as necessary to achieve consensus. Outcomes are assigned a level --- critical, important but not critical, low importance --- and may be ranked to prioritize conduct of the evidence synthesis. @fig-priority and @fig-priority_geri illustrate the data obtained from ratings and rankings.
 
 ![Prioritization of outcomes for neuromuscular monitoring.](assets/priority_nmb.png){#fig-priority fig-align="left" width="90%"}
 
@@ -121,7 +121,7 @@ Backwards searching for studies included in relevant systematic reviews, meta-an
 
 ### Task Force
 
-The task force is given the opportunity to submit potentially relevant primary studies, guidelines, systematic reviews, and meta-analyses. The non-primary research are included in the reference checking process and they remainder considered in the standard selection process.
+The task force is given the opportunity to submit potentially relevant primary studies, guidelines, systematic reviews, and meta-analyses. The non-primary research are included in the reference checking process and the remainder considered in the standard selection process.
 
 ### Retracted Publications
 
@@ -137,7 +137,7 @@ Based on the inclusion-exclusion criteria (study design and PICOTS), study selec
 
 Study designs considered eligible for specific key questions are determined by the questions, PICOTS, and evidence availability. For example, although randomized designs generally offer the most convincing evidence, if few address a particular question/PICOTS, nonrandomized designs may be included. Similarly, nonrandomized designs may be included for evaluation of harms. Case reports and case series, conference abstracts, letters not considered brief research reports, non-English publications, and animal studies are generally not considered eligible.
 
-Two reviewers independently apply independently inclusion-exclusion criteria at each stage with discrepancies resolved by consensus including a third reviewer. Training sets are used to develop agreement concerning the application of inclusion-exclusion criteria.
+Two reviewers independently apply inclusion-exclusion criteria at each stage with discrepancies resolved by consensus including a third reviewer. Training sets are used to develop agreement concerning the application of inclusion-exclusion criteria.
 
 ## Data Extraction/Management
 
@@ -154,7 +154,7 @@ A standard review-specific set of data entry forms, modified for each systematic
 
 Data are abstracted by a single reviewer with verification [@PCORI2019 SR-1] of data relevant for quantitative synthesis and rating (GRADEing) the strength of evidence. Figures are digitized as necessary to obtain results for synthesis. Data are maintained and edited in DistillerSR, a data dictionary compiled, and then transferred to a local repository for evidence synthesis or reports created using DistillerSR. A sample study characteristics form can be seen [here](assets/studyCharacteristicsGeri.pdf).
 
-## Study Risk of Bias Assessments
+## Study Risk of Bias Assessment
 
 Risk of bias for individual studies are evaluated using tools relevant for the study design. The most commonly used tools include:
 

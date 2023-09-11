@@ -1,0 +1,83 @@
+# External Guidance
+
+Documents & ASA Involvement
+
+Types of documents
+
+Practice parameters (inclusive of guidelines)
+
+Statements or policy papers
+
+ASA involvement
+
+ASA members participate on behalf of the Society
+
+No official ASA involvement
+
+Categories of Support
+
+Endorsement
+The document should generally satisfy ASA’s guideline development requirements and there is general agreement with all recommendations in the document.
+ 
+Affirmation of Value
+External organization’s guidelines or practice parameters that have merit and value but either do not generally satisfy ASA’s guideline development requirements or there is not general agreement with all recommendations in the document.
+ 
+No Endorsement or Affirmation of Value
+The external organization’s document does not meet ASA guideline development requirements and is not felt to be of benefit to the ASA membership.
+
+Evaluation of Practice Parameters
+Members of CPP
+
+ASA methodologists
+
+ASA members with content expertise
+
+
+Methodological Review
+“[G]enerally satisfy ASA’s guideline development requirements”
+
+Appraisal
+
+   NEATS1 (guidelines based on systematic review)
+
+   AGREE-II2 (modified3 for consensus guidance)
+
+   Narrative methodological review
+
+Jue JJ, et al. Developing and Testing the Agency for Healthcare Research and Quality’s National Guideline Clearinghouse Extent of Adherence to Trustworthy Standards (NEATS) Instrument. Ann Intern Med 2019; 170: 480-487
+
+Brouwers MC, et al. The AGREE Reporting Checklist: a tool to improve reporting of clinical practice guidelines. BMJ 2016; 352:i1152
+
+Jacobs C, Graham ID, Makarski J, Chasse M, Fergusson D, Hutton B, Clemons M: Clinical practice guidelines and consensus statements in oncology–an assessment of their methodological quality. PLoS One 2014; 9: e110469
+
+
+Narrative Review
+Background/Purpose
+
+Characteristics of the guidance
+
+<br/>Document type
+<br/>Organization/Society
+<br/>Strength of evidence framework
+<br/>Strength of recommendation framework
+<br/>Consensus method: (explicit/implicit)
+<br/>NEATS/AGREE-II appraisal
+
+Methodological approach
+
+Systematic review
+
+<br/>PICOs
+<br/>Review questions
+<br/>Search
+<br/>Types of studies included
+<br/>Risk of bias (quality) assessment
+<br/>Strategy for evidence synthesis
+<br/>Summary
+<br/>References
+
+NEATS (NGC Extent of Adherence to Trustworthy Standards)
+
+Guideline — NEATS Example
+
+Consensus Statement — Modified AGREE-II

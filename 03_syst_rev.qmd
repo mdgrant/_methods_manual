@@ -1,14 +1,14 @@
 # Systematic Review
 
-Trustworthy clinical practice guidelines [@Graham2011] are supported by systematic reviews meeting explicit standards [@Eden2011; @PCORI2019]. The systematic reviews supporting ASA practice parameters conform to those standards.
+Trustworthy clinical practice guidelines *[@Graham2011]* are supported by systematic reviews meeting explicit standards *[@Eden2011; @PCORI2019]*. The systematic reviews supporting ASA practice parameters conform to those standards.
 
 ## Protocol
 
-The protocol, developed collaboratively between the task force and methodologists, guides systematic review conduct, and provides documentation for updates. It includes background material, key questions, PICOTS,[^03_syst_rev-1] analytic framework, study inclusion and exclusion criteria, search strategy, and the anticipated approach to evidence synthesis. Depending on the anticipated scope, protocols may be registered on [PROSPERO](https://www.crd.york.ac.uk/PROSPERO/) [@Booth2012]. However, when the systematic review includes numerous questions and anticipated to require substantial refinement and modifications, registration is omitted. The protocol is included as a supplement to the published practice parameter. (An example draft protocol can be viewed [here](assets/Protocol_Geriatrics_2022-09-17.pdf)).
+The protocol, developed collaboratively between the task force and methodologists, guides systematic review conduct, and provides documentation for updates. It includes background material, key questions, PICOTS,[^03_syst_rev-1] analytic framework, study inclusion and exclusion criteria, search strategy, and the anticipated approach to evidence synthesis. Depending on the anticipated scope, protocols may be registered on [PROSPERO](https://www.crd.york.ac.uk/PROSPERO/) *[@Booth2012]*. However, when the systematic review includes numerous questions and anticipated to require substantial refinement and modifications, registration is omitted. The protocol is included as a supplement to the published practice parameter. (An example draft protocol can be viewed [here](assets/Protocol_Geriatrics_2022-09-17.pdf)).
 
 ## Outcome Importance
 
-Outcomes vary in importance according to patient values and preferences [@Guyatt2011]. From that perspective, following protocol completion task force members rate outcome importance for decision-making. The ratings are reviewed by the entire task force and revised as necessary to achieve consensus. Outcomes are assigned a level --- critical, important but not critical, low importance --- and may be ranked to prioritize conduct of the evidence synthesis. @fig-priority and @fig-priority_geri illustrate the data obtained from ratings and rankings.
+Outcomes vary in importance according to patient values and preferences *[@Guyatt2011]*. From that perspective, following protocol completion task force members rate outcome importance for decision-making. The ratings are reviewed by the entire task force and revised as necessary to achieve consensus. Outcomes are assigned a level --- critical, important but not critical, low importance --- and may be ranked to prioritize conduct of the evidence synthesis. @fig-priority and @fig-priority_geri illustrate the data obtained from ratings and rankings.
 
 ![Prioritization of outcomes for neuromuscular monitoring.](assets/priority_nmb.png){#fig-priority fig-align="left" width="90%"}
 
@@ -111,11 +111,11 @@ outcome_tab_all(rankings_dat, 77)
 
 ### Database Searches
 
-A librarian/information specialist develops search strategies after reviewing the protocol and participating in task force meetings. The primary bibliographic databases queried include PubMed, Embase®, Scopus®, and Cochrane Central Register of Controlled Trials. The task force also submits relevant references for consideration, including systematic reviews and guidelines for reference checking. To ensure that relevant publications have been captured, search result identification of references submitted by the task force is examined. Grey literature searches are topic-dependent relying on registries, conference abstracts, preprint servers, and FDA documents including advisory meeting transcripts. The search dates are determinied by the task force and consider sensitivity [@Xu2022], applicability and generalizability to current practice, and resources required to conduct the review. Depending on the key question, searches may not be limited to English language publications [@Jia2020; @Juni2002; @Egger1997; @Mao2020].
+A librarian/information specialist develops search strategies after reviewing the protocol and participating in task force meetings. The primary bibliographic databases queried include PubMed, Embase®, Scopus®, and Cochrane Central Register of Controlled Trials. The task force also submits relevant references for consideration, including systematic reviews and guidelines for reference checking. To ensure that relevant publications have been captured, search result identification of references submitted by the task force is examined. Grey literature searches are topic-dependent relying on registries, conference abstracts, preprint servers, and FDA documents including advisory meeting transcripts. The search dates are determinied by the task force and consider sensitivity *[@Xu2022]*, applicability and generalizability to current practice, and resources required to conduct the review. Depending on the key question, searches may not be limited to English language publications *[@Jia2020; @Juni2002; @Egger1997; @Mao2020]*.
 
 ### Citation Searching
 
-Backwards searching for studies included in relevant systematic reviews, meta-analyses, and guidelines are considered eligible for inclusion. The selection process outlined below (@fig-checking) is used to identify typically 2 to 3 reviews. Studies included in the those reviews are compiled in a bibliographic database. Those studies not identified in the primary search are subsequently assessed for eligibility. On a selective basis, forward citation searching is conducted using seminal studies to identify citing studies. [Citationchaser](https://estech.shinyapps.io/citationchaser/) is used to facility citation searching [@Haddaway2022].
+Backwards searching for studies included in relevant systematic reviews, meta-analyses, and guidelines are considered eligible for inclusion. The selection process outlined below (@fig-checking) is used to identify typically 2 to 3 reviews. Studies included in the those reviews are compiled in a bibliographic database. Those studies not identified in the primary search are subsequently assessed for eligibility. On a selective basis, forward citation searching is conducted using seminal studies to identify citing studies. [Citationchaser](https://estech.shinyapps.io/citationchaser/) *[@Haddaway2022]* and\/or  [Paperfecter](https://paperfetcher-paperfetcher-web-app-paperfetcher-app-0w0vu2.streamlit.app/) *[@Pallath2023]* are used to facility citation searching. 
 
 ![Approach to backward citation searching.](assets/referenceChecking.png){#fig-checking fig-align="left" width="500"}
 
@@ -133,7 +133,7 @@ Deduplication is performed using EndNote™ (used as the primary bibliographic d
 
 ## Study Selection
 
-Based on the inclusion-exclusion criteria (study design and PICOTS), study selection is performed by reviewing titles and abstracts. The semi-automated predictive tool for title and abstract screening implemented in DistillerSR is utilized. [@Polanin2019] If the number of references is exceedingly large (eg, \> 10,000 or 15,000), screening may be truncated when inclusion predictions for the remaining unscreened references are low (eg, less than 2% to 3%). Full-text review of potentially relevant publications is then conducted with reasons for exclusion at the full-text stage are recorded using a standard set of justifications.
+Based on the inclusion-exclusion criteria (study design and PICOTS), study selection is performed by reviewing titles and abstracts. The semi-automated predictive tool for title and abstract screening implemented in DistillerSR is utilized. *[@Polanin2019]* If the number of references is exceedingly large (eg, \> 10,000 or 15,000), screening may be truncated when inclusion predictions for the remaining unscreened references are low (eg, less than 2% to 3%). Full-text review of potentially relevant publications is then conducted with reasons for exclusion at the full-text stage are recorded using a standard set of justifications.
 
 Study designs considered eligible for specific key questions are determined by the questions, PICOTS, and evidence availability. For example, although randomized designs generally offer the most convincing evidence, if few address a particular question/PICOTS, nonrandomized designs may be included. Similarly, nonrandomized designs may be included for evaluation of harms. Case reports and case series, conference abstracts, letters not considered brief research reports, non-English publications, and animal studies are generally not considered eligible.
 
@@ -152,14 +152,14 @@ A standard review-specific set of data entry forms, modified for each systematic
 -   Likert or other rating scale outcomes (as reported)<br/>
 -   Risk of bias
 
-Data are abstracted by a single reviewer with verification [@PCORI2019 SR-1] of data relevant for quantitative synthesis and rating (GRADEing) the strength of evidence. Figures are digitized as necessary to obtain results for synthesis. Data are maintained and edited in DistillerSR, a data dictionary compiled, and then transferred to a local repository for evidence synthesis or reports created using DistillerSR. A sample study characteristics form can be seen [here](assets/studyCharacteristicsGeri.pdf).
+Data are abstracted by a single reviewer with verification *[@PCORI2019 SR-1]* of data relevant for quantitative synthesis and rating (GRADEing) the strength of evidence. Figures are digitized as necessary to obtain results for synthesis. Data are maintained and edited in DistillerSR, a data dictionary compiled, and then transferred to a local repository for evidence synthesis or reports created using DistillerSR. A sample study characteristics form can be seen [here](assets/studyCharacteristicsGeri.pdf).
 
 ## Study Risk of Bias Assessment
 
 Risk of bias for individual studies are evaluated using tools relevant for the study design. The most commonly used tools include:
 
 -   Randomized clinical trials --- [Cochrane risk of bias tool 2.0](https://sites.google.com/site/riskofbiastool/welcome/rob-2-0-tool/current-version-of-rob-2)
--   Nonrandomized studies --- [ROBINS-I](https://sites.google.com/site/riskofbiastool/welcome/home) (Risk Of Bias In Non-randomized Studies of Interventions)
+-   Nonrandomized studies of interventions --- [ROBINS-I](https://sites.google.com/site/riskofbiastool/welcome/home) (Risk Of Bias In Non-randomized Studies of Interventions)
 -   Diagnostic studies -- [QUADAS-2](https://www.bristol.ac.uk/population-health-sciences/projects/quadas/quadas-2/) (Quality Assessment of Diagnostic Accuracy Studies)
 
 Risk of bias assessments are performed independently by 2 reviews and discordances in domain and signalling question results reconciled by concensus including a third reviewer as necessary. Separate risk of bias assessments are conducted for clinical and patient reported outcomes, but may not be conducted for each of the typically multiple outcomes examined.

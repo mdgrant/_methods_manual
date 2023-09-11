@@ -12,24 +12,27 @@ book:
     - 02_organization.qmd
     - 03_syst_rev.qmd
     - 04_evidence_syn.qmd
+    - 05_recommendations.qmd
+    - 06_endorsement.qmd
     - summary.qmd
     - references.qmd
 
 bibliography: methods_refs.bib
-csl: authorDate.csl
+csl: begell-house-apa.csl
 
 format:
   html:
     theme: cosmo
+    css: styles.css
     tbl-cap-location: margin
+    html-math-method: "mathjax"
   pdf:
     documentclass: scrreprt
 
 fig-cap-location: top
+tbl-cap-location: top
 
 editor: visual
-
-
 
 # book:
 #   title: "ASA Methods Manual (version 0.1)"

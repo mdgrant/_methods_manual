@@ -1,81 +1,127 @@
+---
+tbl-cap-location: top
+csl: begell-house-apa.csl
+link-citations: true
+---
+
 # Evidence Synthesis
 
 ## Introduction
 
-A single study is rarely sufficient to inform a guideline or policy recommendation [@Spiegelhalter2004]; a synthesis of evidence obtained from multiple studies is required. The evidence synthesis may be qualitative or quantitative ranging from narrative descriptions of study results to pairwise meta-analysis (a single intervention and comparator) or network meta-analysis (multiple interventions or comparators). Regardless of the approach, the purpose of an evidence synthesis is to summarize benefits, harms, and uncertainty (statistical and non-statistical) to inform decisions and recommendations.
+A single study is rarely sufficient to inform a guideline or policy recommendation[^04_evidence_syn-1] [@Spiegelhalter2004*, 267*]; a synthesis of evidence obtained from multiple studies is required. The evidence synthesis may be qualitative or quantitative ranging from narrative descriptions of study results to pairwise meta-analysis (a single intervention and comparator) or network meta-analysis (multiple interventions or comparators). Regardless of the approach, the purpose of an evidence synthesis is to summarize benefits, harms, and uncertainty (statistical and non-statistical) to inform decisions and recommendations.
 
-## Philosophy
+@fig-structure depicts how the evidence synthesis is structured for each key question and how results support recommendations. The figure implicitly emphasizes how guideline users have varied needs with respect to detail. Some are interested only in recommendations that include no quantitative information. Many (hopefully most) seek to understand the the summaries detail in the balance tables. Accordingly, these elements are included in the body of the published guideline. Others may want to understand details including GRADE domains, meta-analyses, and how specifics of the synthesis supports recommendations --- provided as supplementary materials (eg, see [example](https://mdgrant.github.io/geriatrics_synth/)). Finally, a rare individual may wish to explore analysis or reproduce them --- data and code are made available for that purpose.
 
-An evidence synthesis strives to make the decision calculus as explicit as possible. It should come as close to addressing the key questions as possible. Sometimes direct evidence and indirect evidence can appropriately be examined, it may be valuable.
+It should be noted that explanatory text in the guideline is by necessity more limited than a singular publication devoted to each key question. However, the degree of detail provided should be sufficient to allow a transparent view to the most discerning or critical reader.
 
-And when possible, avoid ad-hoc or highly subjective interpretation of evidence.
+![Schematic of the evidence synthesis in relation to developing recommendations.](assets/structure.png){#fig-structure fig-align="left" width="75%"}
 
-Network meta-analyses incorporate direct and indirect evidence and may well be the only option.
+<foot_mg> Boxes in gray are included as supplements to the guideline; those in green are part of the publication. </foot_mg>
 
-Although some question the validity of NMA, we are aware of no evidence to support that contention. Moreover, a pairwise meta-analysis is in effect the simpilist case of an NMA.
+## Decision-Making Frameworks
 
-Observational data and causal effects. Randomized clinical trials provide the most convincing evidence, but observational studies can offer a decision-maker useful information and sometimes critical.
+The decision-making required to develop recommendations requires a framework or model --- a calculus of benefits and harms, how they are valued, and their respective uncertainties. The explicitness of the decision calculus varies [@Meltzer2011]. For example, a model can be conceptual existing only in the mind of a decision maker with little or nothing quantitative. On the other extreme, the model can decision-analytic with explicit quantitative inputs and outputs. Like most guideline enterprises, the ASA adopts an approach with qualitative and quantitative elements between the extremes.
 
-Broad structured, but not rigid.
-
-Goal is good decisions
-
-Careful sensitivity analyses.
-
-Can be a blunt instrument at times, but having nothing must leave the decision maker to do the calculus in his or her head, which can be fraught.
-
-To that end,
-
-Decision calculus best to be as explicit as possible;
-
-Compatibility intervals; probability of the estimate being true = 0
-
-## Frameworks for Decision-Making
-
-The decision-making required to develop recommendations requires a framework or model --- a calculus to summarize the balance of benefits and harms, how each is valued, and their respective uncertainties. The explicitness of this decision calculus varies [@Meltzer2011]. For example, a model can be conceptual in a decision makers mind with little or nothing quantitative. On the other extreme, the model can decision-analytic. Like almost all guideline enterprises, the ASA adopts an approach somewhere in the middle of the two extremes with qualitative and quantitative elements (outlined in Figure 3 using the GRADE approach).
-
-After the key questions are formulated and important outcomes specified, relevant studies are identified, data abstracted, and risk of bias appraised. Based on a quantitative (e.g., meta-analysis) or qualitative synthesis, the strength of evidence for each outcome is rated. Outcomes are then weighted according to patient values and preferences and considered as a whole, in turn determining the strength of a recommendation. What follows are descriptions and examples of how individual elements of the evidence synthesis are implemented.
+As outlined in @fig-grade, after formulating key questions and important outcomes specified, relevant studies are identified, data extracted, and risk of bias appraised. Next, using a quantitative or qualitative synthesis, the strength (certainty/GRADE) of evidence for each outcome is rated. Outcomes are then weighted according to patient values and preferences, considered as a whole, and recommendations formulated. <!-- What follows are descriptions and examples of how individual elements of the evidence synthesis are implemented. -->
 
 ![Model and approach to evidence synthesis for making recommendations.](assets/grade.png){#fig-grade}
 
-## Risk of Bias of Individual Studies
-
-Risk of bias assessment for randomized trials uses the Cochrane tool [@Sterne2019]. For non-randomized studies of interventions (eg, observational studies of interventions including cohort, case-control, and quasi-randomized designs), ROBINS-I (Risk Of Bias In Non-randomised Studies of Interventions) is used [@Sterne2016]. For diagnostic accuracy studies, risk of bias for diagnostic accuracy studies are appraised with the QUADAS 2 tool (Quality Assessment of Diagnostic Accuracy Studies) [@Whiting2011]. Other tools may be used as relevant. Risk of bias is assessed independently by two reviewers with discrepancies resolved by discussion, or a third reviewer as needed.
-
-## Study Design Classification
-
-Randomized controlled trial (parallel) Cluster randomized Crossover trial Non-randomized trial (non-randomized studies of interventions) Quasi-experimental (before-after, time series) Prospective cohort (observational) Retrospective cohort (observational) Cross-sectional Case-control Fully paired (diagnostic) Case series
-
-Other designs specific to question (eg, fully paired)
-
-## Inclusion of Observational Studies
-
-Harms
-
-Efficacy rcts sufficient
-
-Else add observational
+But "all models are wrong" [@Box1976] --- including GRADE.
 
 ## Quantitative Synthesis
 
-As appropriate, based on clinical and methodological heterogeneity, study results are pooled in either pairwise or network meta-analyses. Random effects models are generally used as the goal of pooling is to estimate unconditional effects.{Hedges, 1998 #13} Statistical heterogeneity is evaluated using I2, and for values exceeding 25%, meta-regression is considered.{Thompson, 2002 #14} Small study effects and the potential for publication bias are evaluated using funnel plots, regression-based tests, and adjustment methods.{Schwarzer, 2015 #15} Relative effects are pooled as odds ratios{Doi, 2020 #27} and continuous measures as mean differences or standardized mean differences when studies use differing scales. Analyses are conducted using R in a reproducible manner{Team, 2020 #16;Blischak, 2019 #197} and are made publicly available when the Practice Parameter is completed.
+<!-- As appropriate, based on clinical and methodological heterogeneity, study results are pooled in either pairwise or network meta-analyses. Random effects models are generally used as the goal of pooling is to estimate unconditional effects *[@Hedges1998]*  Statistical heterogeneity is evaluated using $I^2$ and $\tau^2$ and when relevant and practicable explored in subgroup analysis or meta-regression *[@Schwarzer2015;@Thompson2002]*. Small study effects and the potential for publication bias are evaluated using funnel plots, regression-based tests, and adjustment methods *[@Schwarzer2015]*. Relative effects are pooled as risk ratios and continuous measures as mean differences or standardized mean differences when studies use differing scales. For dichotomous outcomes study-level absolute risks are reported. Analyses are conducted using R in a reproducible manner{Team, 2020 #16;Blischak, 2019 #197} and are made publicly available when the Practice Parameter is completed. -->
+
+Based on the key question, included studies, clinical and methodological diversity, results are pooled in either pairwise or network meta-analyses. Random effects models are fitted given the goal of estimating unconditional effects (ie, effects not relevant only to the pooled studies) [@Hedges1998]. For binomial outcomes, default models use the Mantel-Haenszel method; for continuous outcomes inverse variance weighting. The restricted maximum likelihood estimator is used to estimate between-study variance [@Viechtbauer2005]. For continuous or scale-reported outcomes, if means and standard deviations are unavailable for they are imputed if authors reported medians, interquartile and/or overall ranges for the effects of interest; and if necessary P-values are used to estimate missing standard deviations [@Shi2020]. When five or more studies are pooled, the Hartung-Knapp adjustment is applied [@Cornell2014]. Network meta-analyses are conducted using frequentist [@Balduzzi2023] or Bayesian methods [@Dias2018a; @Beliveau2019] with non-informative priors. Consistency is examined by comparing direct to indirect evidence in the frequentist network meta-analyses and inconsistency models in the Bayesian approach.
+
+Relative effects as reported as risk ratios for clinical interpretability and continuous outcomes as mean differences or standardized mean differences for outcomes reported with differing scales. When feasible, standardized mean differences are re-expressed on the most common scale used. Statistical heterogeneity is examined using the between study variance and *I* $^2$ [@Rucker2008] and when relevant and practicable explored in subgroup analysis or meta-regression [@Schwarzer2015; @Thompson2002] Small-study effects and the potential for publication bias are examined using funnel plots (comparison-adjusted for network meta-analyses), regression-based tests, and adjustment methods [@Balduzzi2019; @Harrer2021]. Owing to its statistical properties, results using odds ratios are used reported for when examining small-study effects for relative effects; sensitivity analyses are performed using risk ratios.
+
+Analyses are conducted using R [@R2023] in a reproducible manner and made publicly available when the practice parameter is completed.
 
 ### Harms/Adverse Events
 
-Comparative harms are examined as either relative or absolute effects according to the frequency of events. For rare events (eg, mortality) risk differences are used. Risk differences ares
+Comparative harms are pooled as either relative or absolute effects according to the frequency of events. For rare events (eg, mortality) risk differences are most often used.
 
-## Network Meta-Analyses
+### Selected Analysis Matters
 
-Absent compelling reasons for a Bayesian approach (e.g., to incorporate regularizing/informative prior\[s\]), network meta-analyses using a frequentist approach are conducted.
+Age
 
-## Grading the Strength of Evidence
+Surgical classification
 
-The strength (certainty) of evidence for important outcomes is appraised using GRADE,{Schunemann, 2019 #18} and ACC/AHA{, 2010 #21} frameworks.
+The recovery phases described by these tools can be categorised as early, intermediate and late. The early postoperative recovery phase has been defined as the first 24 h \[5, 6\] or the first seven days \[7--9\]. The speed and extent of recovery in the early phase is influenced most by pain, nausea, peri-operative medications and delirium \[10\]. The intermediate phase of postoperative recovery has been defined as the first 28 \[11\] or 60 \[12\] days. The extent of recov- ery in the intermediate phase is influenced most by pain, anxiety and depression, physical impairment and cognitive dysfunction. The late postoperative recovery phase has been defined as the first six weeks \[13\] or three months \[14\].
 
-In the GRADE approach (likely to be adopted), a strength of evidence is determined using an algorithm that includes limitations in the body of evidence (bias, inconsistency, imprecision, indirectness, publication bias) together with factors that can increase confidence in effects obtained from observational studies (large or very large effect magnitude, dose-response, extent of plausible residual confounding). According to study limitations, the strength of evidence may be rated down 1 or 2 levels according to study limitations from a starting rating of high for RCTs. Evidence from observational studies begin with a low rating and may be rated down for limitations or rated up because of effect magnitude, dose-response, or the impact of plausible residual confounding. GRADE guidance for rating the certainty of evidence up or down is followed, with some additions. Inconsistency (unexplained heterogeneity) of pooled effects is judged by examining statistical measures (I2 and between-study variance 𝜏2) alongside prediction intervals when there are sufficient studies. Statistical measures can vary by effect (associational) measures (eg, risk ratio and odds ratio) and are examined for differences in choice.
+[Bowyer 2016](https://associationofanaesthetists-publications.onlinelibrary.wiley.com/doi/epdf/10.1111/anae.13312)
 
-## Strength of Recommendations
+### Sensitivity Analyses
 
-The categories of recommendations in the GRADE approach include strong in favor, weak in favor, weak against, and strong against an intervention. Strong recommendations reflect Task Force believing all or almost all clinicians would choose the specific action or approach. Weak recommendations are those where most, but not all, would choose the action or approach.
+Although useful, meta-analytic results are not without limitations [@Ioannidis2016; @Maclure2001] The robustness of meta-analytic results requires consideration. Aspects include model decisions, small-study effects, influential studies and other factors (eg, secular trends, subgroups).
 
-## References
+Modeling decisions include the choice of effect measure, estimators, use of Hartung-Knapp adjustment, continuity corrections for rare events, and even considering studies without events (can be important for harms). As relevant, particularly when uncertainty in a pooled effect appears unclear, how each of these choices impact the range of plausible effects may be examined.
+
+Small-study effects are particularly important as they may represent publication bias or selective reporting and can affect the strength of evidence. *There is, however, no test for publication bias or selective reporting.* The presence of small-study effects offer clues to their potential presence, but require a sufficient number of studies (eg, 10 or more) to effectively examine. Additionally, there are multiple tests [@Sterne2011; @Begg1994; @Egger1997; @Thompson1999; @Peters2006; @Macaskill2001; @Pustejovsky2019] and adjustment methods --- trim and fill [@Duval2000], PET-PEESE [@Stanley2014], limit meta-analyis [@Rucker2011], P-curves [@Simonsohn2014], and selection models [@Copas2014] that can utilized --- sometimes offering conflicting results.
+
+We adopt a pragmatic approach to sensitivity analyses. If a pooled result is obtained from 10 or more studies, the most appropriate choice of a regression-based test is reported. But if more than one could be used and results differ both are noted. For adjustment, a limit meta-analysis is our method of choice superimposed on a funnel plot (others may be used as sensitivity checks). Although the Hartung-Knapp adjustment is applied given 5 or more studies, we recognize that published meta-analyses typically do not. It is therefore important to understand sensitivity of results to its use and note in the interpretation of evidence and GRADEing.
+
+Finally, despite the wide range of analytic choices our perspective is that a convincing body of evidence should not be materially impacted for a strong recommendation. If it is, then consideration must be incorporated in both rating the strength of evidence and recommendation.
+
+## Rating the Strength of Evidence
+
+The strength (certainty) of evidence for important outcomes is appraised using the Grades of Recommendation, Assessment, Development, and Evaluation [GRADE @GRADE] and American College of Cardiology/American Heart Association [ACC/AHA @Halperin2016] frameworks.
+
+Different conceptual models [@Spiegelhalter2011] underpin these strength of evidence frameworks --- certainty of evidence (GRADE) and evidence hierarchy (ACC/AHA). The longstanding evidence hierarchy (pyramid) model asserts that systematic reviews and meta-analyses of randomized clinical trials provide the most convincing evidence followed by randomized clinical trials, observational studies, and case series or case reports. The certainty of evidence model incorporates the hierarchy insofar as it reflects study validity, but defines strength of evidence in terms of how convinced reviewers are that estimates are close to some "true effect".
+
+### GRADE
+
+| GRADE    | Definition                                                                                                                                                                              |
+|--------------------|----------------------------------------------------|
+| High     | We are very confident that the true effect lies close to that of the estimate of the effect.                                                                                            |
+| Moderate | We are moderately confident in the effect estimate: The true effect is likely to be close to the estimate of the effect, but there is a possibility that it is substantially different. |
+| Low      | Our confidence in the effect estimate is limited: The true effect may be substantially different from the estimate of the effect.                                                       |
+| Very low | We have very little confidence in the effect estimate: The true effect is likely to be substantially different from the estimate of effect.                                             |
+
+: GRADE levels of evidence. {#tbl-grade-levels}
+
+In the GRADE approach, a strength of evidence is determined using an algorithm that includes limitations in the body of evidence (bias, inconsistency, imprecision, indirectness, publication bias) and factors that can increase confidence in effects[^04_evidence_syn-2] (large or very large effect magnitude, dose-response, and plausible residual confounding). According to study limitations, the strength of evidence may be rated down 1 or 2 levels according to study limitations from a starting rating of high for RCTs. Evidence from observational studies begin with a low rating and may be rated down for limitations or rated up because of effect magnitude, dose-response, or the impact of plausible residual confounding. GRADE guidance for rating the certainty of evidence up or down is followed, with some additions. Inconsistency (unexplained heterogeneity) of pooled effects is judged by examining statistical measures (*I* $^2$ and between-study variance $\tau^2$) alongside prediction intervals when there are sufficient studies. Owing to its well-described limitations, *I* $^2$ and some categorization of it's magnitude (eg, small, moderate, or large), is not used as the primary determinant of heterogeneity [@Rucker2008]. These statistics can vary by effect (associational) measures (eg, risk vesrus odds ratios and mean versus standardized mean differences) and are examined for differences in choice.
+
+![Process of GRADEing the strength (certainty) of evidence [after @Balshem2011].](assets/UpDownGrading.png){#fig-grading}
+
+#### Note on Nonrandomized Designs, ROBINS-I, and GRADE
+
+In 2019, the GRADE working group offered "guidance regarding how systematic review authors, guideline developers, and health technology assessment practitioners using GRADE might approach the use of ROBINS-I as part of the certainty rating process" [@Schunemann2019]. They suggested that owing to differences in the ROBINS-I tool (referent to trial emulation) that when it is used, the GRADE for a body of evidence from non-randomized designs should start at high, not low. Although a rationale is offered (potential for additional down GRADEing due to confounding and selection bias), our view is that this guidance is not appropriate. No matter how careful the conduct and analysis of a non-randomized design the assumption of no unmeasured confounding is unverifiable [@Schulz2023] (in stark contrast to randomized designs). On this basis, it is logically inconsistent to equate randomized and non-randomized designs. Additionally, the guidance introduces dependence of GRADE on the risk of bias tool --- absent in its original formulation. We choose to review carefully our appraisals of nonrandomized evidence to avoid overzealous down GRADEing, but retain GRADE in its original formulation.
+
+#### Comment on GRADE
+
+GRADE is complex.
+The web-based handbook spans over 40,000 words and there are now over 30 explanatory publications. 
+The 4-level quality of evidence ratings imposes cutoffs for what is in reality a continuous scale --- ratings near the cutoffs are less certain than might be evident.
+We sometimes struggle assigning a GRADE. 
+Accordingly, the categorical GRADE (high, moderate, low, very low) reflects in effect the mode of a distribution.
+Uncertainty is not conveyed see @Llewellyn2015 and @Stewart2015.
+
+
+### ACC/AHA
+
+| Level | Definition                                                                                                                                                                                    |
+|-------------------|-----------------------------------------------------|
+| A     | High-quality evidence from more than 1 RCTs. Meta-analyses of high-quality RCTs. One or more RCTs corroborated by high-quality registry studies.                                              |
+| B-R   | Moderate-quality evidence from 1 or more randomized controlled trials. Meta-analyses of moderate-quality RCTs.                                                                                |
+| B-NR  | Moderate-quality evidence from 1 or more well-designed, well-executed nonrandomized studies, observational studies, or registry studies. Meta-analyses of such studies.                       |
+| C-LD  | Randomized or nonrandomized observational or registry studies with limitations of design or execution. Meta-analyses of such studies. Physiological or mechanistic studies in human subjects. |
+| C-EO  | Consensus of expert opinion based on clinical experience when evidence is insufficient, vague, or conflicting.                                                                                |
+
+: ACC/AHA levels of evidence. {#tbl-acc-aha}
+
+<font size = 2> RCT: randomized clinical trial; NR: nonrandomized; LD: limited data; EO: expert opinion </font>
+
+ACC/AHA ratings are based on an evidence hierarchy approach. Its 5-level scheme (A, B-R, B-NR, C-LD, C-EO) considers study design (RCT, observational, mechanistic) and quality, number of studies, meta-analytic results, expert opinion and clinical experience (@tbl-acc-aha).
+The framework explicitly allows for consideration of mechanistic studies conducted in humans [@Goodman2013]. 
+Unlike GRADE guidance for arriving at a strength of evidence is limited to the level of evidence definitions. 
+The ratings were recently revised from an A, B, C scheme by expanding B and C into 2 subcategories and adding E for expert opinion [@Jacobs2014].
+
+<!-- ## References {#references} -->
+
+[^04_evidence_syn-1]: "It is unusual for a policy question to be informed by a single study."
+
+[^04_evidence_syn-2]: Applies primarily to evidence obtained from observational studies.
+
+[^04_evidence_syn-3]: \[\@Schunemann2019\].

@@ -118,8 +118,15 @@ The framework explicitly allows for consideration of mechanistic studies conduct
 Unlike GRADE guidance for arriving at a strength of evidence is limited to the level of evidence definitions. 
 The ratings were recently revised from an A, B, C scheme by expanding B and C into 2 subcategories and adding E for expert opinion [@Jacobs2014].
 
-<!-- ## References {#references} -->
+::: {.content-hidden when-format="pdf"}
+::: {.callout-note collapse="true"}
+# Modification History
 
+| Date       | Modifications | Version | Note            |
+|:-----------|:--------------|:--------|:----------------|
+| 2023-09-11 | None          | 0.1     | Initial version |
+:::
+:::
 [^04_evidence_syn-1]: "It is unusual for a policy question to be informed by a single study."
 
 [^04_evidence_syn-2]: Applies primarily to evidence obtained from observational studies.

@@ -42,8 +42,6 @@ Analyses are conducted using R [@R2023] in a reproducible manner and made public
 
 Comparative harms are pooled as either relative or absolute effects according to the frequency of events. For rare events (eg, mortality) risk differences are most often used.
 
-
-
 ### Sensitivity Analyses
 
 Although useful, meta-analytic results are not without limitations [@Ioannidis2016; @Maclure2001] The robustness of meta-analytic results requires consideration. Aspects include model decisions, small-study effects, influential studies and other factors (eg, secular trends, subgroups).

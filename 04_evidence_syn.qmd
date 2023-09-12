@@ -42,15 +42,7 @@ Analyses are conducted using R [@R2023] in a reproducible manner and made public
 
 Comparative harms are pooled as either relative or absolute effects according to the frequency of events. For rare events (eg, mortality) risk differences are most often used.
 
-### Selected Analysis Matters
 
-Age
-
-Surgical classification
-
-The recovery phases described by these tools can be categorised as early, intermediate and late. The early postoperative recovery phase has been defined as the first 24 h \[5, 6\] or the first seven days \[7--9\]. The speed and extent of recovery in the early phase is influenced most by pain, nausea, peri-operative medications and delirium \[10\]. The intermediate phase of postoperative recovery has been defined as the first 28 \[11\] or 60 \[12\] days. The extent of recov- ery in the intermediate phase is influenced most by pain, anxiety and depression, physical impairment and cognitive dysfunction. The late postoperative recovery phase has been defined as the first six weeks \[13\] or three months \[14\].
-
-[Bowyer 2016](https://associationofanaesthetists-publications.onlinelibrary.wiley.com/doi/epdf/10.1111/anae.13312)
 
 ### Sensitivity Analyses
 

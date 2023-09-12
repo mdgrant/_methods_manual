@@ -131,4 +131,3 @@ The ratings were recently revised from an A, B, C scheme by expanding B and C in
 
 [^04_evidence_syn-2]: Applies primarily to evidence obtained from observational studies.
 
-[^04_evidence_syn-3]: \[\@Schunemann2019\].

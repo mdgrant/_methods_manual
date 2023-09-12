@@ -1,83 +1,36 @@
-# External Guidance
+# Support -- External Guidance
 
-ocuments & ASA Involvement
+Guidance documents submitted by external organizations for support from the ASA are reviewed by the CPP and a committee with content expertise. Support is offered in 3 categories:
 
-Types of documents
+1.  **Endorsement** --- The document should generally satisfy ASA's guideline development requirements and there is general agreement with all recommendations in the document. Guidance developed with an official representative from the ASA and approved through governance procedures are considered in this category.
 
-Practice parameters (inclusive of guidelines)
+2.  **Affirmation of Value** --- External organization's guidelines or practice parameters that have merit and value but either do not generally satisfy ASA's guideline development requirements or there is not general agreement with all recommendations in the document. Statements and policy papers may be considered for affirmation of value.
 
-Statements or policy papers
+3.  **No Endorsement or Affirmation of Value** --- The external organization's document does not meet ASA guideline development requirements and is not felt to be of benefit to the ASA membership.
 
-ASA involvement
+Although a complete description of the process for determining the category of support is beyond the scope here, the review conducted by the methodologists is outlined as it is an important function.
 
-ASA members participate on behalf of the Society
+An objective methodological review of approaches used in developing guidance facilitates endorsement decisions. The purpose of the methodological review is not to offer a judgment on whether the guidance document should be endorsed or supported, but to provide a sufficiently detailed appraisal of the methods to allow informed decisions according to the administrative procedures.
 
-No official ASA involvement
+The methodological review includes two main sections:
 
-Categories of Support
+1.  Appraisal of conforming to standards for systematic review conduct [@Eden2011] and developing recommendations [@Graham2011] using the NEATS [@Jue2019] tool (National Guideline Clearinghouse Extent of Adherence to Trustworthy Standards) for practice guidelines and AGREE-II [@Brouwers2016] modified [@Jacobs2014a] for consensus statements.
+2.  A narrative description of the limitations and strengths from a methodological perspective.
 
-Endorsement
-The document should generally satisfy ASA’s guideline development requirements and there is general agreement with all recommendations in the document.
- 
-Affirmation of Value
-External organization’s guidelines or practice parameters that have merit and value but either do not generally satisfy ASA’s guideline development requirements or there is not general agreement with all recommendations in the document.
- 
-No Endorsement or Affirmation of Value
-The external organization’s document does not meet ASA guideline development requirements and is not felt to be of benefit to the ASA membership.
+Depending on the scope and complexity, reviews are conducted by one or two methodologists.
 
-Evaluation of Practice Parameters
-Members of CPP
+Examples of the NEATS and modified AGREE-II appraisals
 
-ASA methodologists
+![Example of NEATS appraisal.](assets/neatsExample.png){#fig-neats fig-align="left" width="90%"}
 
-ASA members with content expertise
+![Example of modified AGREE-II appraisal.](assets/agreeExample.png){#fig-agree fig-align="left" width="90%"}
 
+::: {.content-hidden when-format="pdf"}
+::: {.callout-note collapse="true"}
+# Modification History
 
-Methodological Review
-“[G]enerally satisfy ASA’s guideline development requirements”
-
-Appraisal
-
-   NEATS1 (guidelines based on systematic review)
-
-   AGREE-II2 (modified3 for consensus guidance)
-
-   Narrative methodological review
-
-Jue JJ, et al. Developing and Testing the Agency for Healthcare Research and Quality’s National Guideline Clearinghouse Extent of Adherence to Trustworthy Standards (NEATS) Instrument. Ann Intern Med 2019; 170: 480-487
-
-Brouwers MC, et al. The AGREE Reporting Checklist: a tool to improve reporting of clinical practice guidelines. BMJ 2016; 352:i1152
-
-Jacobs C, Graham ID, Makarski J, Chasse M, Fergusson D, Hutton B, Clemons M: Clinical practice guidelines and consensus statements in oncology–an assessment of their methodological quality. PLoS One 2014; 9: e110469
-
-
-Narrative Review
-Background/Purpose
-
-Characteristics of the guidance
-
-<br/>Document type
-<br/>Organization/Society
-<br/>Strength of evidence framework
-<br/>Strength of recommendation framework
-<br/>Consensus method: (explicit/implicit)
-<br/>NEATS/AGREE-II appraisal
-
-Methodological approach
-
-Systematic review
-
-<br/>PICOs
-<br/>Review questions
-<br/>Search
-<br/>Types of studies included
-<br/>Risk of bias (quality) assessment
-<br/>Strategy for evidence synthesis
-<br/>Summary
-<br/>References
-
-NEATS (NGC Extent of Adherence to Trustworthy Standards)
-
-Guideline — NEATS Example
-
-Consensus Statement — Modified AGREE-II
+| Date       | Modifications | Version | Note            |
+|:-----------|:--------------|:--------|:----------------|
+| 2023-09-12 | None          | 0.1     | Initial version |
+:::
+:::

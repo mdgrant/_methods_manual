@@ -8,20 +8,22 @@ The protocol, developed collaboratively between the task force and methodologist
 
 ## Outcome Importance
 
-Outcomes vary in importance according to patient values and preferences [@Guyatt2011]. From that perspective, following protocol completion task force members rate outcome importance for decision-making. The ratings are reviewed by the entire task force and revised as necessary to achieve consensus. Outcomes are assigned a level --- critical, important but not critical, low importance --- and may be ranked to prioritize conduct of the evidence synthesis. @fig-priority and @fig-priority_geri illustrate the data obtained from ratings and rankings.
+Outcomes vary in importance according to patient values and preferences [@Guyatt2011]. From that perspective, following protocol completion the task force members rate outcome importance for decision-making. The ratings are reviewed by the task force and revised as necessary to achieve consensus. Outcomes are assigned a level --- critical, important but not critical, low importance --- and then ranked to prioritize those to include in the evidence synthesis. @fig-priority and @fig-priority_geri illustrate the results obtained from ratings and rankings.
 
 ![Prioritization of outcomes for neuromuscular monitoring.](assets/priority_nmb.png){#fig-priority fig-align="left" width="90%"}
 
 ```{r}
-#| echo: false
 #| label: fig-priority_geri 
 #| fig-cap: "Example of assessing outcome importance rankings in a geriatrics guideline. Rankings for the 5 most important outcomes across 7 key questions (11 respondents with maximum 77 for each outcome rank or any top 5 ranking)."
-
+#| echo: false
+#| warning: false
+library(conflicted)
 library(janitor)
 library(htmltools)
 library(reactable)
 library(reactablefmtr)
 library(tidyverse)
+conflicts_prefer(dplyr::filter)
 ## key questions 1-6 & 8 --------------------------------------- (2023-01-24 11:48) @----
 # function for outcome priority table by kq
 outcome_tab_all <- function(outcome_dat, responses) {
@@ -33,14 +35,14 @@ outcome_tab_all <- function(outcome_dat, responses) {
     defaultSortOrder = "desc",
     defaultColDef = colDef(
       cell = data_bars(outcome_dat,
-                       box_shadow = TRUE,
-                       force_outside = c(1, 77),
-                       bar_height = 12,
-                       max_value = responses
-                       # fill_color = "#B22215"
+        box_shadow = TRUE,
+        force_outside = c(1, 77),
+        bar_height = 12,
+        max_value = responses
+        # fill_color = "#B22215"
       ),
       style = cell_style(outcome_dat,
-                         font_size = "11px",
+        font_size = "11px",
       )
     ),
     columns = list(
@@ -105,7 +107,7 @@ rankings_dat <- tblhelpr::transpose_tibble(rankings_dat, col_names = rank, id_co
 outcome_tab_all(rankings_dat, 77)
 ```
 
-<font size = 2>*Note that rows can be reordered according to ranking by clicking on column headers.*</font>
+<font size = 2>*Rows can be reordered according to ranking by clicking on column headers.*</font>
 
 ## Identifying Literature
 

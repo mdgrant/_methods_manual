@@ -20,7 +20,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -62,8 +81,6 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -167,10 +184,9 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#formulating-recommendations" id="toc-formulating-recommendations" class="nav-link active" data-scroll-target="#formulating-recommendations"><span class="header-section-number">5.1</span> Formulating Recommendations</a></li>
-  <li><a href="#strength-of-recommendations" id="toc-strength-of-recommendations" class="nav-link" data-scroll-target="#strength-of-recommendations"><span class="header-section-number">5.2</span> Strength of Recommendations</a></li>
-  <li><a href="#best-practice-statements" id="toc-best-practice-statements" class="nav-link" data-scroll-target="#best-practice-statements"><span class="header-section-number">5.3</span> Best Practice Statements</a></li>
-  <li><a href="#no-recommendation" id="toc-no-recommendation" class="nav-link" data-scroll-target="#no-recommendation"><span class="header-section-number">5.4</span> No Recommendation</a></li>
-  <li><a href="#soe-sor-discordance" id="toc-soe-sor-discordance" class="nav-link" data-scroll-target="#soe-sor-discordance"><span class="header-section-number">5.5</span> SOE SOR Discordance</a></li>
+  <li><a href="#best-practice-statements" id="toc-best-practice-statements" class="nav-link" data-scroll-target="#best-practice-statements"><span class="header-section-number">5.2</span> Best Practice Statements</a></li>
+  <li><a href="#no-recommendation" id="toc-no-recommendation" class="nav-link" data-scroll-target="#no-recommendation"><span class="header-section-number">5.3</span> No Recommendation</a></li>
+  <li><a href="#soe-sor-discordance" id="toc-soe-sor-discordance" class="nav-link" data-scroll-target="#soe-sor-discordance"><span class="header-section-number">5.4</span> SOE SOR Discordance</a></li>
   </ul>
 </nav>
     </div>
@@ -196,26 +212,44 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="formulating-recommendations" class="level2" data-number="5.1">
 <h2 data-number="5.1" class="anchored" data-anchor-id="formulating-recommendations"><span class="header-section-number">5.1</span> Formulating Recommendations</h2>
-<p>Language</p>
-<p>Formula</p>
+<p>Recommendations are formulated using the GRADE approach. The categories include strong in favor, conditional in favor, conditional against, and strong against an intervention. Strong recommendations reflect the Task Force believing all or almost all clinicians would choose (or not choose) the specific action or approach. Conditional recommendations are those where most, but not all, would choose (or not choose) the action or approach. Recommendations are presented in tabular format accompanied by the strength of recommendation and evidence.</p>
 </section>
-<section id="strength-of-recommendations" class="level2" data-number="5.2">
-<h2 data-number="5.2" class="anchored" data-anchor-id="strength-of-recommendations"><span class="header-section-number">5.2</span> Strength of Recommendations</h2>
-<p>The categories of recommendations in the GRADE approach include strong in favor, weak in favor, weak against, and strong against an intervention. Strong recommendations reflect Task Force believing all or almost all clinicians would choose the specific action or approach. Weak recommendations are those where most, but not all, would choose the action or approach.</p>
-<p>The categories of recommendations in the GRADE approach include: strong in favor, weak in favor, weak against, and strong against (Table~<span class="math inline">\(\ref{tab:sor}\)</span>) . Strong recommendations reflect authors believing all or almost all clinicians would choose the specific action or approach. Weak recommendations are those where most, but not all, would choose the action or approach. Although not included in the formal GRADE guidance, its developers recommend guideline panels distinguish good or best practice statements from guideline recommendations. Good practice statements are those where evidence is inappropriate for a strength of evidence rating . An example where best practice statements are included in addition to the GRADEd ones is the 2016 Surviving Sepsis Campaign guidelines .</p>
-<p>ACC/AHA &nbsp;ratings are based on an evidence hierarchy approach. Its 5-level &nbsp;rating scheme (A, B-R, B-NR, C-LD, C-EO) considers study design (RCT, observational, mechanistic) and quality, number of studies, meta-analytic results, expert opinion and clinical experience (Table~<span class="math inline">\(\ref{tab:soe}\)</span>, Appendix Figure~<span class="math inline">\(\ref{fig:appendix_acc}\)</span>).<br>
-Recent guidelines have used the Cochrane risk of bias tool to appraise individual studies, but an ACCF/AHA Evidence Grading Tool is apparently under development . The framework explicitly allows for consideration of mechanistic studies conducted in humans. Unlike GRADE and AHRQ/USPSTF approaches, guidance for arriving at a &nbsp;is limited to the level of evidence definitions. The ratings were recently revised from an A, B, C scheme by expanding B and C into 2 subcategories and adding E for expert opinion .</p>
+<section id="best-practice-statements" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="best-practice-statements"><span class="header-section-number">5.2</span> Best Practice Statements</h2>
+<p>When the body of evidence is</p>
+<p>Although not included in the formal GRADE guidance, its developers recommend guideline panels distinguish good or best practice statements from guideline recommendations. Best practice statements are those where evidence is inappropriate for a strength of evidence rating <span class="citation" data-cites="Guyatt2016">Guyatt et al. (<a href="references.html#ref-Guyatt2016" role="doc-biblioref">2016</a>)</span></p>
+<p><span class="citation" data-cites="Brito2013">Brito et al. (<a href="references.html#ref-Brito2013" role="doc-biblioref">2013</a>)</span></p>
+<ol type="1">
+<li><p>When low quality of evidence suggests benefit in a life-threatening situation.</p></li>
+<li><p>When low quality of evidence suggests benefit and high quality of evidence suggests harm or with a very high cost.</p></li>
+<li><p>When low quality of evidence suggests equivalence of 2 alternatives, but high quality evidence of less harm for one of the competing alternatives.</p></li>
+<li><p>When high quality of evidence suggest equivalence of 2 alternatives and low quality of evidence suggests harm in one alternative.</p></li>
+<li><p>When low to high quality of evidence suggests benefits in one important outcome (outcome A) and low/very low quality of evidence suggests possibility of harm in critical (outcome B) and the harm regarding outcome B is valued much more highly than any benefit vis-a-vis.</p></li>
+</ol>
 </section>
-<section id="best-practice-statements" class="level2" data-number="5.3">
-<h2 data-number="5.3" class="anchored" data-anchor-id="best-practice-statements"><span class="header-section-number">5.3</span> Best Practice Statements</h2>
+<section id="no-recommendation" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="no-recommendation"><span class="header-section-number">5.3</span> No Recommendation</h2>
+<p><span class="citation" data-cites="Bretthauer2018">Bretthauer et al. (<a href="references.html#ref-Bretthauer2018" role="doc-biblioref">2018</a>)</span></p>
+<p><span class="citation" data-cites="Neumann2020">Neumann et al. (<a href="references.html#ref-Neumann2020" role="doc-biblioref">2020</a>)</span></p>
 </section>
-<section id="no-recommendation" class="level2" data-number="5.4">
-<h2 data-number="5.4" class="anchored" data-anchor-id="no-recommendation"><span class="header-section-number">5.4</span> No Recommendation</h2>
-</section>
-<section id="soe-sor-discordance" class="level2" data-number="5.5">
-<h2 data-number="5.5" class="anchored" data-anchor-id="soe-sor-discordance"><span class="header-section-number">5.5</span> SOE SOR Discordance</h2>
+<section id="soe-sor-discordance" class="level2" data-number="5.4">
+<h2 data-number="5.4" class="anchored" data-anchor-id="soe-sor-discordance"><span class="header-section-number">5.4</span> SOE SOR Discordance</h2>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-line-spacing="2" role="list" style="display: none">
+<div id="ref-Bretthauer2018" class="csl-entry" role="listitem">
+Bretthauer, M., &amp; Kalager, M. (2018). When no guideline recommendation is the best recommendation. <em>Lancet</em>, <em>392</em>(10151), 898–899. doi: <a href="https://doi.org/10.1016/S0140-6736(18)31671-4">10.1016/S0140-6736(18)31671-4</a>
+</div>
+<div id="ref-Brito2013" class="csl-entry" role="listitem">
+Brito, J. P., Domecq, J. P., Murad, M. H., Guyatt, G. H., &amp; Montori, V. M. (2013). The endocrine society guidelines: When the confidence cart goes before the evidence horse. <em>J Clin Endocrinol Metab</em>, <em>98</em>(8), 3246–3252. doi: <a href="https://doi.org/10.1210/jc.2013-1814">10.1210/jc.2013-1814</a>
+</div>
+<div id="ref-Guyatt2016" class="csl-entry" role="listitem">
+Guyatt, G. H., Alonso-Coello, P., Schünemann, H. J., Djulbegovic, B., Nothacker, M., Lange, S., Murad, M. H., &amp; Akl, E. A. (2016). Guideline panels should seldom make good practice statements: Guidance from the GRADE working group. <em>J Clin Epidemiol</em>, <em>80</em>, 3–7. doi: <a href="https://doi.org/10.1016/j.jclinepi.2016.07.006">10.1016/j.jclinepi.2016.07.006</a>
+</div>
+<div id="ref-Neumann2020" class="csl-entry" role="listitem">
+Neumann, I., &amp; Schünemann, H. J. (2020). Guideline groups should make recommendations even if the evidence is considered insufficient. <em>CMAJ</em>, <em>192</em>(2), E23–E24. doi: <a href="https://doi.org/10.1503/cmaj.190144">10.1503/cmaj.190144</a>
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->

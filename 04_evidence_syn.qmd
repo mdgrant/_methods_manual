@@ -63,7 +63,7 @@ Different conceptual models [@Spiegelhalter2011] underpin these strength of evid
 ### GRADE
 
 | GRADE    | Definition                                                                                                                                                                              |
-|--------------------|----------------------------------------------------|
+|---------------------|---------------------------------------------------|
 | High     | We are very confident that the true effect lies close to that of the estimate of the effect.                                                                                            |
 | Moderate | We are moderately confident in the effect estimate: The true effect is likely to be close to the estimate of the effect, but there is a possibility that it is substantially different. |
 | Low      | Our confidence in the effect estimate is limited: The true effect may be substantially different from the estimate of the effect.                                                       |
@@ -75,24 +75,23 @@ In the GRADE approach, a strength of evidence is determined using an algorithm t
 
 ![Process of GRADEing the strength (certainty) of evidence [after @Balshem2011].](assets/UpDownGrading.png){#fig-grading}
 
+
+#### Strength of Evidence Network Meta-analyses
+
+
+
 #### Note on Nonrandomized Designs, ROBINS-I, and GRADE
 
 In 2019, the GRADE working group offered "guidance regarding how systematic review authors, guideline developers, and health technology assessment practitioners using GRADE might approach the use of ROBINS-I as part of the certainty rating process" [@Schunemann2019]. They suggested that owing to differences in the ROBINS-I tool (referent to trial emulation) that when it is used, the GRADE for a body of evidence from non-randomized designs should start at high, not low. Although a rationale is offered (potential for additional down GRADEing due to confounding and selection bias), our view is that this guidance is not appropriate. No matter how careful the conduct and analysis of a non-randomized design the assumption of no unmeasured confounding is unverifiable [@Schulz2023] (in stark contrast to randomized designs). On this basis, it is logically inconsistent to equate randomized and non-randomized designs. Additionally, the guidance introduces dependence of GRADE on the risk of bias tool --- absent in its original formulation. We choose to review carefully our appraisals of nonrandomized evidence to avoid overzealous down GRADEing, but retain GRADE in its original formulation.
 
 #### Comment on GRADE
 
-GRADE is complex.
-The web-based handbook spans over 40,000 words and there are now over 30 explanatory publications. 
-The 4-level quality of evidence ratings imposes cutoffs for what is in reality a continuous scale --- ratings near the cutoffs are less certain than might be evident.
-We sometimes struggle assigning a GRADE. 
-Accordingly, the categorical GRADE (high, moderate, low, very low) reflects in effect the mode of a distribution.
-Uncertainty is not conveyed see @Llewellyn2015 and @Stewart2015.
-
+GRADE is complex. The web-based handbook spans over 40,000 words and there are now over 30 explanatory publications. The 4-level quality of evidence ratings imposes cutoffs for what is in reality a continuous scale --- ratings near the cutoffs are less certain than might be evident. We sometimes struggle assigning a GRADE. Accordingly, the categorical GRADE (high, moderate, low, very low) reflects in effect the mode of a distribution. Uncertainty is not conveyed see @Llewellyn2015 and @Stewart2015.
 
 ### ACC/AHA
 
 | Level | Definition                                                                                                                                                                                    |
-|-------------------|-----------------------------------------------------|
+|--------------------|----------------------------------------------------|
 | A     | High-quality evidence from more than 1 RCTs. Meta-analyses of high-quality RCTs. One or more RCTs corroborated by high-quality registry studies.                                              |
 | B-R   | Moderate-quality evidence from 1 or more randomized controlled trials. Meta-analyses of moderate-quality RCTs.                                                                                |
 | B-NR  | Moderate-quality evidence from 1 or more well-designed, well-executed nonrandomized studies, observational studies, or registry studies. Meta-analyses of such studies.                       |
@@ -103,10 +102,7 @@ Uncertainty is not conveyed see @Llewellyn2015 and @Stewart2015.
 
 <font size = 2> RCT: randomized clinical trial; NR: nonrandomized; LD: limited data; EO: expert opinion </font>
 
-ACC/AHA ratings are based on an evidence hierarchy approach. Its 5-level scheme (A, B-R, B-NR, C-LD, C-EO) considers study design (RCT, observational, mechanistic) and quality, number of studies, meta-analytic results, expert opinion and clinical experience (@tbl-acc-aha).
-The framework explicitly allows for consideration of mechanistic studies conducted in humans [@Goodman2013]. 
-Unlike GRADE guidance for arriving at a strength of evidence is limited to the level of evidence definitions. 
-The ratings were recently revised from an A, B, C scheme by expanding B and C into 2 subcategories and adding E for expert opinion [@Jacobs2014].
+ACC/AHA ratings are based on an evidence hierarchy approach. Its 5-level scheme (A, B-R, B-NR, C-LD, C-EO) considers study design (RCT, observational, mechanistic) and quality, number of studies, meta-analytic results, expert opinion and clinical experience (@tbl-acc-aha). The framework explicitly allows for consideration of mechanistic studies conducted in humans [@Goodman2013]. Unlike GRADE guidance for arriving at a strength of evidence is limited to the level of evidence definitions. The ratings were recently revised from an A, B, C scheme by expanding B and C into 2 subcategories and adding E for expert opinion [@Jacobs2014].
 
 ::: {.content-hidden when-format="pdf"}
 ::: {.callout-note collapse="true"}
@@ -117,7 +113,7 @@ The ratings were recently revised from an A, B, C scheme by expanding B and C in
 | 2023-09-11 | None          | 0.1     | Initial version |
 :::
 :::
+
 [^04_evidence_syn-1]: "It is unusual for a policy question to be informed by a single study."
 
 [^04_evidence_syn-2]: Applies primarily to evidence obtained from observational studies.
-

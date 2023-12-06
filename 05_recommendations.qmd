@@ -2,32 +2,37 @@
 
 ## Formulating Recommendations
 
-Language
-
-Formula
-
-## Strength of Recommendations
-
-The categories of recommendations in the GRADE approach include strong in favor, weak in favor, weak against, and strong against an intervention. Strong recommendations reflect Task Force believing all or almost all clinicians would choose the specific action or approach. Weak recommendations are those where most, but not all, would choose the action or approach.
-
-The categories of recommendations in the GRADE approach include: strong in favor, weak in favor, weak against, and strong against (Table~\ref{tab:sor}) \cite{Andrews2013}.
-Strong recommendations reflect authors believing all or almost all clinicians would choose the specific action or approach.
-Weak recommendations are those where most, but not all, would choose the action or approach.
-Although not included in the formal GRADE guidance, its developers recommend guideline panels distinguish good or best practice statements from guideline recommendations.
-Good practice statements are those where evidence is inappropriate for a strength of evidence rating \cite{Guyatt2015,Guyatt2016}.
-An example where best practice statements are included in addition to the GRADEd ones is the 2016 Surviving Sepsis Campaign guidelines \cite{Rhodes2017}.
-
-ACC/AHA \soe\ ratings are based on an evidence hierarchy approach.
-Its 5-level \soe\ rating scheme (A, B-R, B-NR, C-LD, C-EO) considers study design (RCT, observational, mechanistic) and quality, number of studies, meta-analytic results, expert opinion and clinical experience (Table~\ref{tab:soe}, Appendix Figure~\ref{fig:appendix_acc}).	
-Recent guidelines \cite{Reboussin2018} have used the Cochrane risk of bias tool to appraise individual studies, but an ACCF/AHA Evidence Grading Tool is apparently under development \cite{Jacobs2013}. 
-The framework explicitly allows for consideration of mechanistic studies \cite{Goodman2013} conducted in humans.
-Unlike GRADE and AHRQ/USPSTF approaches, guidance for arriving at a \soe\ is limited to the level of evidence definitions. 
-The ratings were recently revised from an A, B, C scheme by expanding B and C into 2 subcategories and adding E for expert opinion \cite{Jacobs2014}.
+Recommendations are formulated using the GRADE approach. 
+The categories include strong in favor, conditional in favor, conditional against, and strong against an intervention. 
+Strong recommendations reflect the Task Force believing all or almost all clinicians would choose (or not choose) the specific action or approach. 
+Conditional recommendations are those where most, but not all, would choose (or not choose) the action or approach.
+Recommendations are presented in tabular format accompanied by the strength of recommendation and evidence. 
 
 ## Best Practice Statements
 
+When the body of evidence is
+
+Although not included in the formal GRADE guidance, its developers recommend guideline panels distinguish good or best practice statements from guideline recommendations.
+Best practice statements are those where evidence is inappropriate for a strength of evidence rating  @Guyatt2016
+ 
+
+
+@Brito2013
+
+1. When low quality of evidence suggests benefit in a life-threatening situation. 
+
+2. When low quality of evidence suggests benefit and high quality of evidence suggests harm or with a very high cost. 
+
+3. When low quality of evidence suggests equivalence of 2 alternatives, but high quality evidence of less harm for one of the competing alternatives. 
+
+4. When high quality of evidence suggest equivalence of 2 alternatives and low quality of evidence suggests harm in one alternative. 
+
+5. When low to high quality of evidence suggests benefits in one important outcome (outcome A) and low/very low quality of evidence suggests possibility of harm in critical (outcome B) and the harm regarding outcome B is valued much more highly than any benefit vis-a-vis.
 
 ## No Recommendation
 
+@Bretthauer2018
+
+@Neumann2020
 
 ## SOE SOR Discordance

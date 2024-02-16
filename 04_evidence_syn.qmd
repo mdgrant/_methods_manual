@@ -126,6 +126,8 @@ ACC/AHA ratings are based on an evidence hierarchy approach. Its 5-level scheme 
 | Date       | Modifications | Version | Note            |
 |:-----------|:--------------|:--------|:----------------|
 | 2023-09-11 | None          | 0.1     | Initial version |
+| 2024-02-15 | Notes concerning GRADE         |      | Updated         |
+|            | Network strength of evidence.          |      | Updated         |
 :::
 :::
 

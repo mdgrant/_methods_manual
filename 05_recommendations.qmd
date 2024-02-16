@@ -8,19 +8,16 @@ Strong recommendations reflect the Task Force believing all or almost all clinic
 Conditional recommendations are those where most, but not all, would choose (or not choose) the action or approach.
 Recommendations are presented in tabular format accompanied by the strength of recommendation and evidence. 
 
-SOE supporting the final recommendation is determined by the lowest SOE for any critical outcome.
-"It is better to be explicit, and it is logical that the overall confidence in effect estimates cannot be higher than the lowest confidence in effect estimates for any outcome that is critical for a decision. We therefore suggest applying the lowest confidence rating of the critical outcomes as the overall confidence associated with a recommendation." @Guyatt2013 @oxman2004
+<!-- SOE supporting the final recommendation is determined by the lowest SOE for any critical outcome. -->
+<!-- "It is better to be explicit, and it is logical that the overall confidence in effect estimates cannot be higher than the lowest confidence in effect estimates for any outcome that is critical for a decision. We therefore suggest applying the lowest confidence rating of the critical outcomes as the overall confidence associated with a recommendation."  @Guyatt2013 @oxman2004 -->
 
-Not a logical approach as outcomes are not weighted equally. 
-
+<!-- Not a logical approach as outcomes are not weighted equally.  -->
 
 
 ## Best Practice Statements
 
-When the body of evidence is
-
 Although not included in the formal GRADE guidance, its developers recommend guideline panels distinguish good or best practice statements from guideline recommendations.
-Best practice statements are those where evidence is inappropriate for a strength of evidence rating  @Guyatt2016 
+Best practice statements are those where evidence is inappropriate for a strength of evidence rating.
  
 
 

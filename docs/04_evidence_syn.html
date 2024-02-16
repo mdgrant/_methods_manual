@@ -188,13 +188,20 @@ div.csl-indent {
   <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">4.1</span> Introduction</a></li>
   <li><a href="#decision-making-frameworks" id="toc-decision-making-frameworks" class="nav-link" data-scroll-target="#decision-making-frameworks"><span class="header-section-number">4.2</span> Decision-Making Frameworks</a></li>
   <li><a href="#quantitative-synthesis" id="toc-quantitative-synthesis" class="nav-link" data-scroll-target="#quantitative-synthesis"><span class="header-section-number">4.3</span> Quantitative Synthesis</a>
-  <ul class="collapse">
-  <li><a href="#harmsadverse-events" id="toc-harmsadverse-events" class="nav-link" data-scroll-target="#harmsadverse-events"><span class="header-section-number">4.3.1</span> Harms/Adverse Events</a></li>
-  <li><a href="#sensitivity-analyses" id="toc-sensitivity-analyses" class="nav-link" data-scroll-target="#sensitivity-analyses"><span class="header-section-number">4.3.2</span> Sensitivity Analyses</a></li>
+  <ul>
+  <li><a href="#combining" id="toc-combining" class="nav-link" data-scroll-target="#combining"><span class="header-section-number">4.3.1</span> Combining</a></li>
+  <li><a href="#harmsadverse-events" id="toc-harmsadverse-events" class="nav-link" data-scroll-target="#harmsadverse-events"><span class="header-section-number">4.3.2</span> Harms/Adverse Events</a></li>
+  <li><a href="#sensitivity-analyses" id="toc-sensitivity-analyses" class="nav-link" data-scroll-target="#sensitivity-analyses"><span class="header-section-number">4.3.3</span> Sensitivity Analyses</a></li>
   </ul></li>
   <li><a href="#rating-the-strength-of-evidence" id="toc-rating-the-strength-of-evidence" class="nav-link" data-scroll-target="#rating-the-strength-of-evidence"><span class="header-section-number">4.4</span> Rating the Strength of Evidence</a>
+  <ul>
+  <li><a href="#grade" id="toc-grade" class="nav-link" data-scroll-target="#grade"><span class="header-section-number">4.4.1</span> GRADE</a>
   <ul class="collapse">
-  <li><a href="#grade" id="toc-grade" class="nav-link" data-scroll-target="#grade"><span class="header-section-number">4.4.1</span> GRADE</a></li>
+  <li><a href="#strength-of-evidence-network-meta-analyses" id="toc-strength-of-evidence-network-meta-analyses" class="nav-link" data-scroll-target="#strength-of-evidence-network-meta-analyses"><span class="header-section-number">4.4.1.1</span> Strength of Evidence Network Meta-analyses</a></li>
+  <li><a href="#note-on-nonrandomized-designs-robins-i-and-grade" id="toc-note-on-nonrandomized-designs-robins-i-and-grade" class="nav-link" data-scroll-target="#note-on-nonrandomized-designs-robins-i-and-grade"><span class="header-section-number">4.4.1.2</span> Note on Nonrandomized Designs, ROBINS-I, and GRADE</a></li>
+  <li><a href="#other-specifics-regarding-application-of-grade-domain-ratings-and-summary" id="toc-other-specifics-regarding-application-of-grade-domain-ratings-and-summary" class="nav-link" data-scroll-target="#other-specifics-regarding-application-of-grade-domain-ratings-and-summary"><span class="header-section-number">4.4.1.3</span> Other specifics regarding application of GRADE domain ratings and summary</a></li>
+  <li><a href="#comment-on-grade" id="toc-comment-on-grade" class="nav-link" data-scroll-target="#comment-on-grade"><span class="header-section-number">4.4.1.4</span> Comment on GRADE</a></li>
+  </ul></li>
   <li><a href="#accaha" id="toc-accaha" class="nav-link" data-scroll-target="#accaha"><span class="header-section-number">4.4.2</span> ACC/AHA</a></li>
   </ul></li>
   </ul>
@@ -251,12 +258,16 @@ div.csl-indent {
 <p>Based on the key question, included studies, clinical and methodological diversity, results are pooled in either pairwise or network meta-analyses. Random effects models are fitted given the goal of estimating unconditional effects (ie, effects not relevant only to the pooled studies) <span class="citation" data-cites="Hedges1998">(<a href="references.html#ref-Hedges1998" role="doc-biblioref">Hedges et al., 1998</a>)</span>. For binomial outcomes, default models use the Mantel-Haenszel method; for continuous outcomes inverse variance weighting. The restricted maximum likelihood estimator is used to estimate between-study variance <span class="citation" data-cites="Viechtbauer2005">(<a href="references.html#ref-Viechtbauer2005" role="doc-biblioref">Viechtbauer, 2005</a>)</span>. For continuous or scale-reported outcomes, if means and standard deviations are unavailable for they are imputed if authors reported medians, interquartile and/or overall ranges for the effects of interest; and if necessary P-values are used to estimate missing standard deviations <span class="citation" data-cites="Shi2020">(<a href="references.html#ref-Shi2020" role="doc-biblioref">Shi et al., 2020</a>)</span>. When five or more studies are pooled, the Hartung-Knapp adjustment is applied <span class="citation" data-cites="Cornell2014">(<a href="references.html#ref-Cornell2014" role="doc-biblioref">Cornell et al., 2014</a>)</span>. Network meta-analyses are conducted using frequentist <span class="citation" data-cites="Balduzzi2023">(<a href="references.html#ref-Balduzzi2023" role="doc-biblioref">Balduzzi et al., 2023</a>)</span> or Bayesian methods <span class="citation" data-cites="Dias2018a Beliveau2019">(<a href="references.html#ref-Beliveau2019" role="doc-biblioref">Béliveau et al., 2019</a>; <a href="references.html#ref-Dias2018a" role="doc-biblioref">Dias et al., 2018</a>)</span> with non-informative priors. Consistency is examined by comparing direct to indirect evidence in the frequentist network meta-analyses and inconsistency models in the Bayesian approach.</p>
 <p>Relative effects as reported as risk ratios for clinical interpretability and continuous outcomes as mean differences or standardized mean differences for outcomes reported with differing scales. When feasible, standardized mean differences are re-expressed on the most common scale used. Statistical heterogeneity is examined using the between study variance and <em>I</em> <span class="math inline">\(^2\)</span> <span class="citation" data-cites="Rucker2008">(<a href="references.html#ref-Rucker2008" role="doc-biblioref">Rücker et al., 2008</a>)</span> and when relevant and practicable explored in subgroup analysis or meta-regression <span class="citation" data-cites="Schwarzer2015 Thompson2002">(<a href="references.html#ref-Schwarzer2015" role="doc-biblioref">Schwarzer et al., 2015</a>; <a href="references.html#ref-Thompson2002" role="doc-biblioref">Simon G. Thompson et al., 2002</a>)</span> Small-study effects and the potential for publication bias are examined using funnel plots (comparison-adjusted for network meta-analyses), regression-based tests, and adjustment methods <span class="citation" data-cites="Balduzzi2019 Harrer2021">(<a href="references.html#ref-Balduzzi2019" role="doc-biblioref">Balduzzi et al., 2019</a>; <a href="references.html#ref-Harrer2021" role="doc-biblioref">Harrer et al., 2021</a>)</span>. Owing to its statistical properties, results using odds ratios are used reported for when examining small-study effects for relative effects; sensitivity analyses are performed using risk ratios.</p>
 <p>Analyses are conducted using R <span class="citation" data-cites="R2023">(<a href="references.html#ref-R2023" role="doc-biblioref">R Core Team, 2023</a>)</span> in a reproducible manner and made publicly available when the practice parameter is completed.</p>
-<section id="harmsadverse-events" class="level3" data-number="4.3.1">
-<h3 data-number="4.3.1" class="anchored" data-anchor-id="harmsadverse-events"><span class="header-section-number">4.3.1</span> Harms/Adverse Events</h3>
-<p>Comparative harms are pooled as either relative or absolute effects according to the frequency of events. For rare events (eg, mortality) risk differences are most often used.</p>
+<section id="combining" class="level3" data-number="4.3.1">
+<h3 data-number="4.3.1" class="anchored" data-anchor-id="combining"><span class="header-section-number">4.3.1</span> Combining</h3>
 </section>
-<section id="sensitivity-analyses" class="level3" data-number="4.3.2">
-<h3 data-number="4.3.2" class="anchored" data-anchor-id="sensitivity-analyses"><span class="header-section-number">4.3.2</span> Sensitivity Analyses</h3>
+<section id="harmsadverse-events" class="level3" data-number="4.3.2">
+<h3 data-number="4.3.2" class="anchored" data-anchor-id="harmsadverse-events"><span class="header-section-number">4.3.2</span> Harms/Adverse Events</h3>
+<p>Comparative harms are pooled as either relative or absolute effects according to the frequency of events. For rare events (eg, mortality) risk differences are most often used.</p>
+<p>Absolute risk differences may be examined, typically for complications, but because event rates can vary across studies relative effects are the basis for assessing the strength of evidence.</p>
+</section>
+<section id="sensitivity-analyses" class="level3" data-number="4.3.3">
+<h3 data-number="4.3.3" class="anchored" data-anchor-id="sensitivity-analyses"><span class="header-section-number">4.3.3</span> Sensitivity Analyses</h3>
 <p>Although useful, meta-analytic results are not without limitations <span class="citation" data-cites="Ioannidis2016 Maclure2001">(<a href="references.html#ref-Ioannidis2016" role="doc-biblioref">Ioannidis, 2016</a>; <a href="references.html#ref-Maclure2001" role="doc-biblioref">Maclure et al., 2001</a>)</span> The robustness of meta-analytic results requires consideration. Aspects include model decisions, small-study effects, influential studies and other factors (eg, secular trends, subgroups).</p>
 <p>Modeling decisions include the choice of effect measure, estimators, use of Hartung-Knapp adjustment, continuity corrections for rare events, and even considering studies without events (can be important for harms). As relevant, particularly when uncertainty in a pooled effect appears unclear, how each of these choices impact the range of plausible effects may be examined.</p>
 <p>Small-study effects are particularly important as they may represent publication bias or selective reporting and can affect the strength of evidence. <em>There is, however, no test for publication bias or selective reporting.</em> The presence of small-study effects offer clues to their potential presence, but require a sufficient number of studies (eg, 10 or more) to effectively examine. Additionally, there are multiple tests <span class="citation" data-cites="Sterne2011 Begg1994 Egger1997 Thompson1999 Peters2006 Macaskill2001 Pustejovsky2019">(<a href="references.html#ref-Begg1994" role="doc-biblioref">Begg et al., 1994</a>; <a href="references.html#ref-Egger1997" role="doc-biblioref">Egger et al., 1997</a>; <a href="references.html#ref-Macaskill2001" role="doc-biblioref">Macaskill et al., 2001</a>; <a href="references.html#ref-Peters2006" role="doc-biblioref">Peters et al., 2006</a>; <a href="references.html#ref-Pustejovsky2019" role="doc-biblioref">Pustejovsky et al., 2019</a>; <a href="references.html#ref-Sterne2011" role="doc-biblioref">Sterne et al., 2011</a>; <a href="references.html#ref-Thompson1999" role="doc-biblioref">S. G. Thompson et al., 1999</a>)</span> and adjustment methods — trim and fill <span class="citation" data-cites="Duval2000">(<a href="references.html#ref-Duval2000" role="doc-biblioref">Duval et al., 2000</a>)</span>, PET-PEESE <span class="citation" data-cites="Stanley2014">(<a href="references.html#ref-Stanley2014" role="doc-biblioref">Stanley et al., 2014</a>)</span>, limit meta-analyis <span class="citation" data-cites="Rucker2011">(<a href="references.html#ref-Rucker2011" role="doc-biblioref">Rücker et al., 2011</a>)</span>, P-curves <span class="citation" data-cites="Simonsohn2014">(<a href="references.html#ref-Simonsohn2014" role="doc-biblioref">Simonsohn et al., 2014</a>)</span>, and selection models <span class="citation" data-cites="Copas2014">(<a href="references.html#ref-Copas2014" role="doc-biblioref">Copas et al., 2014</a>)</span> that can utilized — sometimes offering conflicting results.</p>
@@ -267,15 +278,15 @@ div.csl-indent {
 <section id="rating-the-strength-of-evidence" class="level2" data-number="4.4">
 <h2 data-number="4.4" class="anchored" data-anchor-id="rating-the-strength-of-evidence"><span class="header-section-number">4.4</span> Rating the Strength of Evidence</h2>
 <p>The strength (certainty) of evidence for important outcomes is appraised using the Grades of Recommendation, Assessment, Development, and Evaluation <span class="citation" data-cites="GRADE">(GRADE <a href="references.html#ref-GRADE" role="doc-biblioref">Schünemann et al., 2013</a>)</span> and American College of Cardiology/American Heart Association <span class="citation" data-cites="Halperin2016">(ACC/AHA <a href="references.html#ref-Halperin2016" role="doc-biblioref">Halperin et al., 2016</a>)</span> frameworks.</p>
-<p>Different conceptual models <span class="citation" data-cites="Spiegelhalter2011">(<a href="references.html#ref-Spiegelhalter2011" role="doc-biblioref">Spiegelhalter et al., 2011</a>)</span> underpin these strength of evidence frameworks — certainty of evidence (GRADE) and evidence hierarchy (ACC/AHA). The longstanding evidence hierarchy (pyramid) model asserts that systematic reviews and meta-analyses of randomized clinical trials provide the most convincing evidence followed by randomized clinical trials, observational studies, and case series or case reports. The certainty of evidence model incorporates the hierarchy insofar as it reflects study validity, but defines strength of evidence in terms of how convinced reviewers are that estimates are close to some “true effect”.</p>
+<p>Different conceptual models <span class="citation" data-cites="Spiegelhalter2011">(<a href="references.html#ref-Spiegelhalter2011" role="doc-biblioref">Spiegelhalter et al., 2011</a>)</span> underpin these strength of evidence frameworks — certainty of evidence (GRADE) and evidence hierarchy (ACC/AHA). The longstanding evidence hierarchy (pyramid) model asserts that systematic reviews and meta-analyses of randomized clinical trials provide the most convincing evidence followed by randomized clinical trials, observational studies, and case series or case reports. The certainty of evidence model incorporates the hierarchy insofar as it reflects study validity, but defines the strength of evidence in terms of how convinced reviewers are that estimates are close to some “true effect”.</p>
 <section id="grade" class="level3" data-number="4.4.1">
 <h3 data-number="4.4.1" class="anchored" data-anchor-id="grade"><span class="header-section-number">4.4.1</span> GRADE</h3>
 <div id="tbl-grade-levels" class="anchored">
 <table class="table">
 <caption>Table&nbsp;4.1: GRADE levels of evidence.</caption>
 <colgroup>
-<col style="width: 29%">
-<col style="width: 70%">
+<col style="width: 30%">
+<col style="width: 69%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -312,14 +323,27 @@ div.csl-indent {
 </div>
 <section id="strength-of-evidence-network-meta-analyses" class="level4" data-number="4.4.1.1">
 <h4 data-number="4.4.1.1" class="anchored" data-anchor-id="strength-of-evidence-network-meta-analyses"><span class="header-section-number">4.4.1.1</span> Strength of Evidence Network Meta-analyses</h4>
+<p>There different approaches to assessing whether evidence from network meta-analyses is convincing including GRADE, <span class="citation" data-cites="Brignardello-Petersen2019 Brignardello-Petersen2019a Brignardello-Petersen2018 Brignardello-Petersen2021 Hao2023">(<a href="references.html#ref-Brignardello-Petersen2018" role="doc-biblioref">Brignardello-Petersen et al., 2018</a>, <a href="references.html#ref-Brignardello-Petersen2021" role="doc-biblioref">2021</a>; <a href="references.html#ref-Brignardello-Petersen2019" role="doc-biblioref">Brignardello-Petersen, Murad, et al., 2019</a>; <a href="references.html#ref-Brignardello-Petersen2019a" role="doc-biblioref">Brignardello-Petersen, Mustafa, et al., 2019</a>; <a href="references.html#ref-Hao2023" role="doc-biblioref">Hao et al., 2023</a>)</span> CINeMA, <span class="citation" data-cites="Nikolakopoulou2020 Papakonstantinou2020">(<a href="references.html#ref-Nikolakopoulou2020" role="doc-biblioref">Nikolakopoulou et al., 2020</a>; <a href="references.html#ref-Papakonstantinou2020" role="doc-biblioref">Papakonstantinou et al., 2020</a>)</span> and threshold analysis <span class="citation" data-cites="Phillippo2019">(<a href="references.html#ref-Phillippo2019" role="doc-biblioref">Phillippo et al., 2019</a>)</span>. A concise summary of using each in developing recommendations can be found in Welton et al <span class="citation" data-cites="Welton2020">(<a href="references.html#ref-Welton2020" role="doc-biblioref">Welton et al., 2020</a>)</span> (from the NICE Decision Support Unit). We use CINeMA following as a coherent and practicable approach.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></p>
 </section>
 <section id="note-on-nonrandomized-designs-robins-i-and-grade" class="level4" data-number="4.4.1.2">
 <h4 data-number="4.4.1.2" class="anchored" data-anchor-id="note-on-nonrandomized-designs-robins-i-and-grade"><span class="header-section-number">4.4.1.2</span> Note on Nonrandomized Designs, ROBINS-I, and GRADE</h4>
-<p>In 2019, the GRADE working group offered “guidance regarding how systematic review authors, guideline developers, and health technology assessment practitioners using GRADE might approach the use of ROBINS-I as part of the certainty rating process” <span class="citation" data-cites="Schunemann2019">(<a href="references.html#ref-Schunemann2019" role="doc-biblioref">Schünemann et al., 2019</a>)</span>. They suggested that owing to differences in the ROBINS-I tool (referent to trial emulation) that when it is used, the GRADE for a body of evidence from non-randomized designs should start at high, not low. Although a rationale is offered (potential for additional down GRADEing due to confounding and selection bias), our view is that this guidance is not appropriate. No matter how careful the conduct and analysis of a non-randomized design the assumption of no unmeasured confounding is unverifiable <span class="citation" data-cites="Schulz2023">(<a href="references.html#ref-Schulz2023" role="doc-biblioref">Schulz et al., 2023</a>)</span> (in stark contrast to randomized designs). On this basis, it is logically inconsistent to equate randomized and non-randomized designs. Additionally, the guidance introduces dependence of GRADE on the risk of bias tool — absent in its original formulation. We choose to review carefully our appraisals of nonrandomized evidence to avoid overzealous down GRADEing, but retain GRADE in its original formulation.</p>
+<p>In 2019, the GRADE working group offered “guidance regarding how systematic review authors, guideline developers, and health technology assessment practitioners using GRADE might approach the use of ROBINS-I as part of the certainty rating process” <span class="citation" data-cites="Schunemann2019">(<a href="references.html#ref-Schunemann2019" role="doc-biblioref">Schünemann et al., 2019</a>)</span>. They suggested owing to differences in the ROBINS-I tool (referent to trial emulation) that when it is used, the GRADE for a body of evidence from non-randomized designs should start at high, not low strength of evidence. Although a rationale is offered, our view is that this guidance is not appropriate (potential for additional down GRADEing due to confounding and selection bias). No matter how careful the conduct and analysis of a non-randomized study, the assumption of no unmeasured confounding is unverifiable <span class="citation" data-cites="Schulz2023">(<a href="references.html#ref-Schulz2023" role="doc-biblioref">Schulz et al., 2023</a>)</span> (in stark contrast to randomized designs). On this basis, it is logically inconsistent to equate randomized and non-randomized designs. Additionally, the guidance introduces dependence of GRADE on the risk of bias tool — absent in its original formulation. We choose to review carefully our appraisals of nonrandomized evidence to avoid overzealous down GRADEing, but retain GRADE in its original formulation.</p>
 </section>
-<section id="comment-on-grade" class="level4" data-number="4.4.1.3">
-<h4 data-number="4.4.1.3" class="anchored" data-anchor-id="comment-on-grade"><span class="header-section-number">4.4.1.3</span> Comment on GRADE</h4>
-<p>GRADE is complex. The web-based handbook spans over 40,000 words and there are now over 30 explanatory publications. The 4-level quality of evidence ratings imposes cutoffs for what is in reality a continuous scale — ratings near the cutoffs are less certain than might be evident. We sometimes struggle assigning a GRADE. Accordingly, the categorical GRADE (high, moderate, low, very low) reflects in effect the mode of a distribution. Uncertainty is not conveyed see <span class="citation" data-cites="Llewellyn2015">Llewellyn et al. (<a href="references.html#ref-Llewellyn2015" role="doc-biblioref">2015</a>)</span> and <span class="citation" data-cites="Stewart2015">Stewart et al. (<a href="references.html#ref-Stewart2015" role="doc-biblioref">2015</a>)</span>.</p>
+<section id="other-specifics-regarding-application-of-grade-domain-ratings-and-summary" class="level4" data-number="4.4.1.3">
+<h4 data-number="4.4.1.3" class="anchored" data-anchor-id="other-specifics-regarding-application-of-grade-domain-ratings-and-summary"><span class="header-section-number">4.4.1.3</span> Other specifics regarding application of GRADE domain ratings and summary</h4>
+<ul>
+<li><p>Inconsistency:</p>
+<ul>
+<li><p>When there is a single study inconsistency is rated very serious and for 2 studies serious. The rationale is that at least 3 studies are required to begin to assess the direction of effect. This rule can be modified for large multi-center studies.</p></li>
+<li><p>Prediction intervals are used to assess inconsistency. <em>I</em><sup> 2</sup> values are included only in forest plots as part of the evidence synthesis.</p></li>
+</ul></li>
+<li><p>If randomized and nonrandomized results are combined (eg for harms) the body of evidence is treated as observational beginning at a low GRADE.</p></li>
+<li><p>A result described as inconclusive is intended to convey that in our judgment the range of effects could allow conclusions of superioity for either comparator. A result described as favoring neither comparator means that the range of effects would exclude a clinically meaningful difference.</p></li>
+</ul>
+</section>
+<section id="comment-on-grade" class="level4" data-number="4.4.1.4">
+<h4 data-number="4.4.1.4" class="anchored" data-anchor-id="comment-on-grade"><span class="header-section-number">4.4.1.4</span> Comment on GRADE</h4>
+<p>GRADE is complex. The web-based handbook spans over 40,000 words and there are now over 30 explanatory publications. The 4-level quality of evidence ratings imposes cutoffs for what is in reality a continuous scale — ratings near the cutoffs are less certain than might be evident. We sometimes struggle assigning a GRADE. Accordingly, the categorical GRADE (high, moderate, low, very low) reflects in effect the mode of a distribution. Uncertainty is not conveyed — for example <span class="citation" data-cites="Llewellyn2015 Stewart2015">(<a href="references.html#ref-Llewellyn2015" role="doc-biblioref">Llewellyn et al., 2015</a>; <a href="references.html#ref-Stewart2015" role="doc-biblioref">Stewart et al., 2015</a>)</span>.</p>
 </section>
 </section>
 <section id="accaha" class="level3" data-number="4.4.2">
@@ -328,8 +352,8 @@ div.csl-indent {
 <table class="table">
 <caption>Table&nbsp;4.2: ACC/AHA levels of evidence.</caption>
 <colgroup>
-<col style="width: 27%">
-<col style="width: 72%">
+<col style="width: 29%">
+<col style="width: 70%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -417,6 +441,18 @@ Béliveau, A., Boyne, D. J., Slater, J., Brenner, D., &amp; Arora, P. (2019). BU
 <div id="ref-Box1976" class="csl-entry" role="listitem">
 Box, G. E. (1976). Science and statistics. <em>Journal of the American Statistical Association</em>, <em>71</em>(356), 791–799.
 </div>
+<div id="ref-Brignardello-Petersen2018" class="csl-entry" role="listitem">
+Brignardello-Petersen, R., Bonner, A., Alexander, P. E., Siemieniuk, R. A., Furukawa, T. A., Rochwerg, B., Hazlewood, G. S., Alhazzani, W., Mustafa, R. A., Murad, M. H., Puhan, M. A., Schünemann, H. J., &amp; Guyatt, G. H. (2018). Advances in the GRADE approach to rate the certainty in estimates from a network meta-analysis. <em>J Clin Epidemiol</em>, <em>93</em>, 36–44. doi: <a href="https://doi.org/10.1016/j.jclinepi.2017.10.005">10.1016/j.jclinepi.2017.10.005</a>
+</div>
+<div id="ref-Brignardello-Petersen2021" class="csl-entry" role="listitem">
+Brignardello-Petersen, R., Guyatt, G. H., Mustafa, R. A., Chu, D. K., Hultcrantz, M., Schünemann, H. J., &amp; Tomlinson, G. (2021). GRADE guidelines 33: Addressing imprecision in a network meta-analysis. <em>J Clin Epidemiol</em>, <em>139</em>, 49–56. doi: <a href="https://doi.org/10.1016/j.jclinepi.2021.07.011">10.1016/j.jclinepi.2021.07.011</a>
+</div>
+<div id="ref-Brignardello-Petersen2019" class="csl-entry" role="listitem">
+Brignardello-Petersen, R., Murad, M. H., Walter, S. D., McLeod, S., Carrasco-Labra, A., Rochwerg, B., Schünemann, H. J., Tomlinson, G., &amp; Guyatt, G. H. (2019). GRADE approach to rate the certainty from a network meta-analysis: Avoiding spurious judgments of imprecision in sparse networks. <em>J Clin Epidemiol</em>, <em>105</em>, 60–67. doi: <a href="https://doi.org/10.1016/j.jclinepi.2018.08.022">10.1016/j.jclinepi.2018.08.022</a>
+</div>
+<div id="ref-Brignardello-Petersen2019a" class="csl-entry" role="listitem">
+Brignardello-Petersen, R., Mustafa, R. A., Siemieniuk, R. A. C., Murad, M. H., Agoritsas, T., Izcovich, A., Schünemann, H. J., &amp; Guyatt, G. H. (2019). GRADE approach to rate the certainty from a network meta-analysis: Addressing incoherence. <em>J Clin Epidemiol</em>, <em>108</em>, 77–85. doi: <a href="https://doi.org/10.1016/j.jclinepi.2018.11.025">10.1016/j.jclinepi.2018.11.025</a>
+</div>
 <div id="ref-Copas2014" class="csl-entry" role="listitem">
 Copas, J., Dwan, K., Kirkham, J., &amp; Williamson, P. (2014). A model-based correction for outcome reporting bias in meta-analysis. <em>Biostatistics</em>, <em>15</em>(2), 370–383. doi: <a href="https://doi.org/10.1093/biostatistics/kxt046">10.1093/biostatistics/kxt046</a>
 </div>
@@ -437,6 +473,9 @@ Goodman, S. N., &amp; Gerson, J. (2013). <a href="https://www.ncbi.nlm.nih.gov/p
 </div>
 <div id="ref-Halperin2016" class="csl-entry" role="listitem">
 Halperin, J. L., Levine, G. N., Al-Khatib, S. M., Birtcher, K. K., Bozkurt, B., Brindis, R. G., Cigarroa, J. E., Curtis, L. H., Fleisher, L. A., Gentile, F., Gidding, S., Hlatky, M. A., Ikonomidis, J., Joglar, J., Pressler, S. J., &amp; Wijeysundera, D. N. (2016). Further evolution of the ACC/AHA clinical practice guideline recommendation classification system: A report of the american college of cardiology/american heart association task force on clinical practice guidelines. <em>J Am Coll Cardiol</em>, <em>67</em>(13), 1572–1574. doi: <a href="https://doi.org/10.1016/j.jacc.2015.09.001">10.1016/j.jacc.2015.09.001</a>
+</div>
+<div id="ref-Hao2023" class="csl-entry" role="listitem">
+Hao, Q., Gao, Y., Zhao, Y., Murad, M. H., Mustafa, R., Ansari, M. T., Schünemann, H. J., Rind, D. M., Brignardello-Petersen, R., &amp; Guyatt, G. (2023). GRADE concept 6: A novel application of external indirect evidence into GRADE ratings of evidence certainty in network meta-analysis. <em>J Clin Epidemiol</em>, <em>163</em>, 95–101. doi: <a href="https://doi.org/10.1016/j.jclinepi.2023.09.006">10.1016/j.jclinepi.2023.09.006</a>
 </div>
 <div id="ref-Harrer2021" class="csl-entry" role="listitem">
 Harrer, M., Cuijpers, P., Furukawa, T., &amp; Ebert, D. (2021). <em>Doing meta-analysis with r: A hands-on guide</em>. Chapman; Hall/CRC.
@@ -462,8 +501,17 @@ Maclure, M., &amp; Schneeweiss, S. (2001). Causation of bias: The episcope. <em>
 <div id="ref-Meltzer2011" class="csl-entry" role="listitem">
 Meltzer, D. O., Hoomans, T., Chung, J. W., &amp; Basu, A. (2011). Minimal modeling approaches to value of information analysis for health research. <em>Med Decis Making</em>, <em>31</em>(6), E1–E22. doi: <a href="https://doi.org/10.1177/0272989X11412975">10.1177/0272989X11412975</a>
 </div>
+<div id="ref-Nikolakopoulou2020" class="csl-entry" role="listitem">
+Nikolakopoulou, A., Higgins, J. P. T., Papakonstantinou, T., Chaimani, A., Del Giovane, C., Egger, M., &amp; Salanti, G. (2020). CINeMA: An approach for assessing confidence in the results of a network meta-analysis. <em>PLoS Med</em>, <em>17</em>(4), e1003082. doi: <a href="https://doi.org/10.1371/journal.pmed.1003082">10.1371/journal.pmed.1003082</a>
+</div>
+<div id="ref-Papakonstantinou2020" class="csl-entry" role="listitem">
+Papakonstantinou, T., Nikolakopoulou, A., Higgins, J. P. T., Egger, M., &amp; Salanti, G. (2020). CINeMA: Software for semiautomated assessment of the confidence in the results of network meta-analysis. <em>Campbell Syst Rev</em>, <em>16</em>(1), e1080. doi: <a href="https://doi.org/10.1002/cl2.1080">10.1002/cl2.1080</a>
+</div>
 <div id="ref-Peters2006" class="csl-entry" role="listitem">
 Peters, J. L., Sutton, A. J., Jones, D. R., Abrams, K. R., &amp; Rushton, L. (2006). Comparison of two methods to detect publication bias in meta-analysis. <em>JAMA</em>, <em>295</em>(6), 676–680. doi: <a href="https://doi.org/10.1001/jama.295.6.676">10.1001/jama.295.6.676</a>
+</div>
+<div id="ref-Phillippo2019" class="csl-entry" role="listitem">
+Phillippo, D. M., Dias, S., Welton, N. J., Caldwell, D. M., Taske, N., &amp; Ades, A. E. (2019). Threshold analysis as an alternative to GRADE for assessing confidence in guideline recommendations based on network meta-analyses. <em>Ann Intern Med</em>. doi: <a href="https://doi.org/10.7326/M18-3542">10.7326/M18-3542</a>
 </div>
 <div id="ref-Pustejovsky2019" class="csl-entry" role="listitem">
 Pustejovsky, J. E., &amp; Rodgers, M. A. (2019). Testing for funnel plot asymmetry of standardized mean differences. <em>Res Synth Methods</em>, <em>10</em>(1), 57–71. doi: <a href="https://doi.org/10.1002/jrsm.1332">10.1002/jrsm.1332</a>
@@ -519,6 +567,9 @@ Thompson, S. G., &amp; Sharp, S. J. (1999). Explaining heterogeneity in meta-ana
 <div id="ref-Viechtbauer2005" class="csl-entry" role="listitem">
 Viechtbauer, W. (2005). Bias and efficiency of meta-analytic variance estimators in the random-effects model. <em>Journal of Educational and Behavioral Statistics</em>, <em>30</em>(3), 261–293. doi: <a href="https://doi.org/10.3102/10769986030003261">10.3102/10769986030003261</a>
 </div>
+<div id="ref-Welton2020" class="csl-entry" role="listitem">
+Welton, N. J., Phillippo, D. M., Owen, R., Jones, H. J., Dias, S., Bujkiewicz, S., Ades, A. E., &amp; Abrams, K. R. (2020). <em><span>CHTE2020</span> sources and synthesis of evidence: Update to evidence synthesis methods</em>. Retrieved from <a href="https://www.sheffield.ac.uk/sites/default/files/2022-02/CHTE-2020_final_20April2020_final.pdf">https://www.sheffield.ac.uk/sites/default/files/2022-02/CHTE-2020_final_20April2020_final.pdf</a>
+</div>
 </div>
 </section>
 </section>
@@ -527,6 +578,7 @@ Viechtbauer, W. (2005). Bias and efficiency of meta-analytic variance estimators
 <ol>
 <li id="fn1"><p>“It is unusual for a policy question to be informed by a single study.”<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn2"><p>Applies primarily to evidence obtained from observational studies.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>Welton et al note, “In comparison to GRADE-NMA, which is non-sensical, the methodology [CINeMA] is rigorous, easier and less time-consuming to use, and cannot produce incoherent conclusions.”<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section>
 

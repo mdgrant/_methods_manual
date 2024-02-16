@@ -38,9 +38,13 @@ Relative effects as reported as risk ratios for clinical interpretability and co
 
 Analyses are conducted using R [@R2023] in a reproducible manner and made publicly available when the practice parameter is completed.
 
+### Combining
+
 ### Harms/Adverse Events
 
 Comparative harms are pooled as either relative or absolute effects according to the frequency of events. For rare events (eg, mortality) risk differences are most often used.
+
+Absolute risk differences may be examined, typically for complications, but because event rates can vary across studies relative effects are the basis for assessing the strength of evidence.
 
 ### Sensitivity Analyses
 
@@ -58,12 +62,12 @@ Finally, despite the wide range of analytic choices our perspective is that a co
 
 The strength (certainty) of evidence for important outcomes is appraised using the Grades of Recommendation, Assessment, Development, and Evaluation [GRADE @GRADE] and American College of Cardiology/American Heart Association [ACC/AHA @Halperin2016] frameworks.
 
-Different conceptual models [@Spiegelhalter2011] underpin these strength of evidence frameworks --- certainty of evidence (GRADE) and evidence hierarchy (ACC/AHA). The longstanding evidence hierarchy (pyramid) model asserts that systematic reviews and meta-analyses of randomized clinical trials provide the most convincing evidence followed by randomized clinical trials, observational studies, and case series or case reports. The certainty of evidence model incorporates the hierarchy insofar as it reflects study validity, but defines strength of evidence in terms of how convinced reviewers are that estimates are close to some "true effect".
+Different conceptual models [@Spiegelhalter2011] underpin these strength of evidence frameworks --- certainty of evidence (GRADE) and evidence hierarchy (ACC/AHA). The longstanding evidence hierarchy (pyramid) model asserts that systematic reviews and meta-analyses of randomized clinical trials provide the most convincing evidence followed by randomized clinical trials, observational studies, and case series or case reports. The certainty of evidence model incorporates the hierarchy insofar as it reflects study validity, but defines the strength of evidence in terms of how convinced reviewers are that estimates are close to some "true effect".
 
 ### GRADE
 
 | GRADE    | Definition                                                                                                                                                                              |
-|---------------------|---------------------------------------------------|
+|----------------------|--------------------------------------------------|
 | High     | We are very confident that the true effect lies close to that of the estimate of the effect.                                                                                            |
 | Moderate | We are moderately confident in the effect estimate: The true effect is likely to be close to the estimate of the effect, but there is a possibility that it is substantially different. |
 | Low      | Our confidence in the effect estimate is limited: The true effect may be substantially different from the estimate of the effect.                                                       |
@@ -75,23 +79,34 @@ In the GRADE approach, a strength of evidence is determined using an algorithm t
 
 ![Process of GRADEing the strength (certainty) of evidence [after @Balshem2011].](assets/UpDownGrading.png){#fig-grading}
 
-
 #### Strength of Evidence Network Meta-analyses
 
-
+There different approaches to assessing whether evidence from network meta-analyses is convincing including GRADE, [@Brignardello-Petersen2019; @Brignardello-Petersen2019a; @Brignardello-Petersen2018; @Brignardello-Petersen2021; @Hao2023] CINeMA, [@Nikolakopoulou2020; @Papakonstantinou2020] and threshold analysis [@Phillippo2019]. A concise summary of using each in developing recommendations can be found in Welton et al [@Welton2020] (from the NICE Decision Support Unit). We use CINeMA following as a coherent and practicable approach.[^04_evidence_syn-3]
 
 #### Note on Nonrandomized Designs, ROBINS-I, and GRADE
 
-In 2019, the GRADE working group offered "guidance regarding how systematic review authors, guideline developers, and health technology assessment practitioners using GRADE might approach the use of ROBINS-I as part of the certainty rating process" [@Schunemann2019]. They suggested that owing to differences in the ROBINS-I tool (referent to trial emulation) that when it is used, the GRADE for a body of evidence from non-randomized designs should start at high, not low. Although a rationale is offered (potential for additional down GRADEing due to confounding and selection bias), our view is that this guidance is not appropriate. No matter how careful the conduct and analysis of a non-randomized design the assumption of no unmeasured confounding is unverifiable [@Schulz2023] (in stark contrast to randomized designs). On this basis, it is logically inconsistent to equate randomized and non-randomized designs. Additionally, the guidance introduces dependence of GRADE on the risk of bias tool --- absent in its original formulation. We choose to review carefully our appraisals of nonrandomized evidence to avoid overzealous down GRADEing, but retain GRADE in its original formulation.
+In 2019, the GRADE working group offered "guidance regarding how systematic review authors, guideline developers, and health technology assessment practitioners using GRADE might approach the use of ROBINS-I as part of the certainty rating process" [@Schunemann2019]. They suggested owing to differences in the ROBINS-I tool (referent to trial emulation) that when it is used, the GRADE for a body of evidence from non-randomized designs should start at high, not low strength of evidence. Although a rationale is offered, our view is that this guidance is not appropriate (potential for additional down GRADEing due to confounding and selection bias). No matter how careful the conduct and analysis of a non-randomized study, the assumption of no unmeasured confounding is unverifiable [@Schulz2023] (in stark contrast to randomized designs). On this basis, it is logically inconsistent to equate randomized and non-randomized designs. Additionally, the guidance introduces dependence of GRADE on the risk of bias tool --- absent in its original formulation. We choose to review carefully our appraisals of nonrandomized evidence to avoid overzealous down GRADEing, but retain GRADE in its original formulation.
+
+#### Other specifics regarding application of GRADE domain ratings and summary
+
+-   Inconsistency:
+
+    -   When there is a single study inconsistency is rated very serious and for 2 studies serious. The rationale is that at least 3 studies are required to begin to assess the direction of effect. This rule can be modified for large multi-center studies.
+
+    -   Prediction intervals are used to assess inconsistency. *I*<sup> 2</sup> values are included only in forest plots as part of the evidence synthesis.
+
+-   If randomized and nonrandomized results are combined (eg for harms) the body of evidence is treated as observational beginning at a low GRADE.
+
+-   A result described as inconclusive is intended to convey that in our judgment the range of effects could allow conclusions of superioity for either comparator. A result described as favoring neither comparator means that the range of effects would exclude a clinically meaningful difference.
 
 #### Comment on GRADE
 
-GRADE is complex. The web-based handbook spans over 40,000 words and there are now over 30 explanatory publications. The 4-level quality of evidence ratings imposes cutoffs for what is in reality a continuous scale --- ratings near the cutoffs are less certain than might be evident. We sometimes struggle assigning a GRADE. Accordingly, the categorical GRADE (high, moderate, low, very low) reflects in effect the mode of a distribution. Uncertainty is not conveyed see @Llewellyn2015 and @Stewart2015.
+GRADE is complex. The web-based handbook spans over 40,000 words and there are now over 30 explanatory publications. The 4-level quality of evidence ratings imposes cutoffs for what is in reality a continuous scale --- ratings near the cutoffs are less certain than might be evident. We sometimes struggle assigning a GRADE. Accordingly, the categorical GRADE (high, moderate, low, very low) reflects in effect the mode of a distribution. Uncertainty is not conveyed — for example [@Llewellyn2015; @Stewart2015].
 
 ### ACC/AHA
 
 | Level | Definition                                                                                                                                                                                    |
-|--------------------|----------------------------------------------------|
+|---------------------|---------------------------------------------------|
 | A     | High-quality evidence from more than 1 RCTs. Meta-analyses of high-quality RCTs. One or more RCTs corroborated by high-quality registry studies.                                              |
 | B-R   | Moderate-quality evidence from 1 or more randomized controlled trials. Meta-analyses of moderate-quality RCTs.                                                                                |
 | B-NR  | Moderate-quality evidence from 1 or more well-designed, well-executed nonrandomized studies, observational studies, or registry studies. Meta-analyses of such studies.                       |
@@ -117,3 +132,5 @@ ACC/AHA ratings are based on an evidence hierarchy approach. Its 5-level scheme 
 [^04_evidence_syn-1]: "It is unusual for a policy question to be informed by a single study."
 
 [^04_evidence_syn-2]: Applies primarily to evidence obtained from observational studies.
+
+[^04_evidence_syn-3]: Welton et al note, "In comparison to GRADE-NMA, which is non-sensical, the methodology \[CINeMA\] is rigorous, easier and less time-consuming to use, and cannot produce incoherent conclusions."

@@ -6,14 +6,12 @@ As the methods and approaches evolve, modification are incorporated. Those repre
 
 Comments, suggestions for additions, or corrections can be sent to [Mark Grant](mailto:m.grant@asahq.org).
 
-:::: {.content-hidden when-format="pdf"}
+::: {.content-hidden when-format="pdf"}
 ::: {.callout-note collapse="true"}
-
 # Modification History
 
-| Date | Modifications | Version | Note |
-|:-----|:---------|:--------|:----------|
-| 2023-07-24 | None     | 0.1 | Initial version|
-
+| Date       | Modifications | Version | Note            |
+|:-----------|:--------------|:--------|:----------------|
+| 2023-07-24 | None          | 0.1     | Initial version |
 :::
-::::
+:::

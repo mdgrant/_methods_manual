@@ -87,17 +87,19 @@ There different approaches to assessing whether evidence from network meta-analy
 
 In 2019, the GRADE working group offered "guidance regarding how systematic review authors, guideline developers, and health technology assessment practitioners using GRADE might approach the use of ROBINS-I as part of the certainty rating process" [@Schunemann2019]. They suggested owing to differences in the ROBINS-I tool (referent to trial emulation) that when it is used, the GRADE for a body of evidence from non-randomized designs should start at high, not low strength of evidence. Although a rationale is offered, our view is that this guidance is not appropriate (potential for additional down GRADEing due to confounding and selection bias). No matter how careful the conduct and analysis of a non-randomized study, the assumption of no unmeasured confounding is unverifiable [@Schulz2023] (in stark contrast to randomized designs). On this basis, it is logically inconsistent to equate randomized and non-randomized designs. Additionally, the guidance introduces dependence of GRADE on the risk of bias tool --- absent in its original formulation. We choose to review carefully our appraisals of nonrandomized evidence to avoid overzealous down GRADEing, but retain GRADE in its original formulation.
 
-#### Other specifics regarding application of GRADE domain ratings and summary
+#### Other particulars regarding application of GRADE domain ratings and summary
 
 -   Inconsistency:
 
     -   When there is a single study inconsistency is rated very serious and for 2 studies serious. The rationale is that at least 3 studies are required to begin to assess the direction of effect. This rule can be modified for large multi-center studies.
 
-    -   Prediction intervals are used to assess inconsistency. *I*<sup> 2</sup> values are included only in forest plots as part of the evidence synthesis.
+    -   Prediction intervals are used to assess inconsistency. *I*<sup> 2</sup> values are included in forest plots as part of the evidence synthesis.
 
--   If randomized and nonrandomized results are combined (eg for harms) the body of evidence is treated as observational beginning at a low GRADE.
+-   If randomized and nonrandomized results are combined (eg, for harms) the body of evidence is treated as observational beginning at a low GRADE.
 
--   A result described as inconclusive is intended to convey that in our judgment the range of effects could allow conclusions of superioity for either comparator. A result described as favoring neither comparator means that the range of effects would exclude a clinically meaningful difference.
+-   A result described as inconclusive is intended to convey that, in our judgment, the confidence interval allows concluding either comparator was clinically meaningfully superior.
+
+-   A result described as favoring neither comparator reflects that the range of effects was judged to exclude a clinically meaningful difference.
 
 #### Comment on GRADE
 

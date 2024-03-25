@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2024-02-15">
+<meta name="dcterms.date" content="2024-03-25">
 
 <title>ASA Methods Manual (version 0.1)</title>
 <style>
@@ -21,7 +21,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -184,7 +203,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">February 15, 2024</p>
+      <p class="date">March 25, 2024</p>
     </div>
   </div>
   
@@ -212,6 +231,12 @@ Modification History
 <div id="callout-1" class="callout-1-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <table class="table">
+<colgroup>
+<col style="width: 18%">
+<col style="width: 57%">
+<col style="width: 9%">
+<col style="width: 15%">
+</colgroup>
 <thead>
 <tr class="header">
 <th style="text-align: left;">Date</th>
@@ -227,6 +252,12 @@ Modification History
 <td style="text-align: left;">0.1</td>
 <td style="text-align: left;">Initial version</td>
 </tr>
+<tr class="even">
+<td style="text-align: left;">2024-03-25</td>
+<td style="text-align: left;">Added large effect definition to GRADE section. Revised approach to assessing inconsistency. <span class="citation" data-cites="Borenstein2023">(<a href="references.html#ref-Borenstein2023" role="doc-biblioref">Borenstein, 2023</a>)</span></td>
+<td style="text-align: left;">0.1</td>
+<td style="text-align: left;"></td>
+</tr>
 </tbody>
 </table>
 </div>
@@ -234,6 +265,11 @@ Modification History
 </div>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-line-spacing="2" role="list" style="display: none">
+<div id="ref-Borenstein2023" class="csl-entry" role="listitem">
+Borenstein, M. (2023). Avoiding common mistakes in meta-analysis: Understanding the distinct roles of q, i-squared, tau-squared, and the prediction interval in reporting heterogeneity. <em>Res Synth Methods</em>. doi: <a href="https://doi.org/10.1002/jrsm.1678">10.1002/jrsm.1678</a>
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->

@@ -11,7 +11,8 @@ Comments, suggestions for additions, or corrections can be sent to [Mark Grant](
 # Modification History
 
 | Date       | Modifications | Version | Note            |
-|:-----------|:--------------|:--------|:----------------|
+|:-----------|:-------------------------------------|:-----|:---------|
 | 2023-07-24 | None          | 0.1     | Initial version |
+| 2024-03-25 | Added large effect definition to GRADE section. Revised approach to assessing inconsistency. [@Borenstein2023] | 0.1 |  |
 :::
 :::
